@@ -1,0 +1,94 @@
+/* font link
+ */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Marmelad&family=Poller+One&display=swap");
+
+/* Global variables. if used for as value do this: var(--variable-name) */
+:root {
+  /* fonts */
+  --title-font: "Lato", sans-serif;
+  --main-font: "Playfair Display", serif;
+
+  /* Colours */
+  --text: rgb(0, 0, 0);
+  --background: rgb(255, 255, 255);
+  --primary: rgb(255, 0, 0);
+  --secondary: rgb(0, 255, 0);
+  --accent: rgb(0, 0, 255);
+
+  /* Utility */
+  --small-boxshadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  --boxshadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  --border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: var(--main font);
+  font-weight: 200;
+  letter-spacing: 2px;
+  /* color: whitesmoke !important; */
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  letter-spacing: 2px;
+}
+
+/* text color variable used for background color */
+.color-text-bg {
+  background-color: var(--text);
+}
+
+/* text color variable used for text color */
+.color-text-text {
+    color: var(--text);
+}
+
+/* background color variable used for background */
+.color-bg-bg {
+    background-color: var(--background);
+}
+
+/* background color variable used for text */
+.color-bg-text {
+  color: var(--background);
+}
+
+/* primary color variable used for background */
+.color-pr-bg {
+  background-color: var(--primary);
+}
+
+/* primary color variable used for text */
+.color-pr-text {
+  color: var(--primary);
+}
+
+/* secondary color variable used for background */
+.color-sc-bg {
+  background-color: var(--secondary);
+}
+
+/* secondary color variable used for text */
+.color-sc-text {
+  color: var(--secondary);
+}
+
+/* accent color variable used for background */
+.color-ac-bg {
+  background-color: var(--accent);
+}
+
+/* accent color variable used for text */
+.color-ac-text {
+  color: var(--accent);
+}
