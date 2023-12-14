@@ -23,4 +23,4 @@ body:
     multiple: false
 - type: markdown
   attributes:
-    value: "Thanks for contributing to the Project-Cauldron!"
+    value: "Thanks for contributing to the Christmas-hackathon!"
