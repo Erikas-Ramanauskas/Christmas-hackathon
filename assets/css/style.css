@@ -2,10 +2,28 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Marmelad&family=Poller+One&display=swap");
 
+@font-face {
+    font-family: 'merry_christmas_flakeregular';
+    src: url('../font/merrychristmasflake-webfont.woff2') format('woff2'),
+         url('../font/merrychristmasflake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'merry_christmas_starregular';
+    src: url('../font/merrychristmasstar-webfont.woff2') format('woff2'),
+         url('../font/merrychristmasstar-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Global variables. if used for as value do this: var(--variable-name) */
 :root {
   /* fonts */
-  --title-font: "Lato", sans-serif;
+  --title-font: "merry_christmas_flakeregular", sans-serif;
   --main-font: "Playfair Display", serif;
 
   /* Colours */
@@ -91,4 +109,45 @@ h6 {
 /* accent color variable used for text */
 .color-ac-text {
   color: var(--accent);
+}
+
+/* footer */
+
+footer section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-btn{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.5rem;
+  border: 5px solid var(--primary);
+}
+
+.social-btn i{
+  transition: all 0.3s ease-in-out;
+}
+
+.social-btn:hover{
+  color: var(--primary);
+  background-color: var(--primary);
+}
+
+.copyright-p,
+.copyright-p a 
+{
+  font-size: 0.75rem;
+  color: var(--primary);
+}
+
+.copyright-p a:hover{
+  color: var(--background);
 }
