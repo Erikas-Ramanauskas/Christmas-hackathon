@@ -1,0 +1,12 @@
+name: JS Task
+description: Issue for js task
+title: 'JS TASK: '
+labels: Js Task
+projects: ['Erikas-Ramanauskas/4']
+body:
+- type: textarea
+  attributes:
+    label: "Description:"
+- type: markdown
+  attributes:
+    value: "Thanks for contributing to the Christmas-hackathon!"
