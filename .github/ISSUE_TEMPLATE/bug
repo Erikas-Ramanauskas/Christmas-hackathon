@@ -1,0 +1,26 @@
+name: Bug
+description: Issue for bug
+title: 'BUG: '
+labels: bug
+projects: ['Erikas-Ramanauskas/4']
+body:
+- type: textarea
+  attributes:
+    label: "Bug Description:"
+    description: describe the bug
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Priority
+    description: priority of the bug
+    options:
+      - Critical
+      - High
+      - Medium
+      - Low
+    default: 3
+    multiple: false
+- type: markdown
+  attributes:
+    value: "Thanks for contributing to the Project-Cauldron!"
