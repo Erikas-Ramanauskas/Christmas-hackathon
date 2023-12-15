@@ -56,6 +56,8 @@ body {
 
 main{
   height: 100vh;
+  width: 100vw;
+  padding: 0;
   overflow-y: scroll;
   scroll-snap-type: y proximity;
 }
@@ -78,14 +80,14 @@ main > section:nth-child(3n-1){
   background-color: var(--primary);
 }
 
-.navbar{
-  background-color: rgba(0, 0, 0, 0.7);
+main > section:nth-child(3n-2){
+  background-color: var(--secondary);
 }
 
-.nav-link{
-  color: white;
+section div h1 {
+  font-size: 5rem;
+  color: #ffffff;
 }
-
 
 h1,
 h2,
@@ -147,43 +149,29 @@ h6 {
   color: var(--accent);
 }
 
-/* footer */
+/* navigation bar */
 
-footer section{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+.nav-link{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0.5rem;
+  font-weight: 600;
+  border-radius: 1rem !important;
+  padding: 0.4rem 0.6rem;
 }
 
-.social-btn{
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary);
-  font-size: 1.5rem;
-  height: 3rem;
-  width: 3rem;
-  margin: 0 0.5rem;
-  border: 5px solid var(--primary);
+
+.nav-pills .nav-link.active{
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.social-btn i{
-  transition: all 0.3s ease-in-out;
+.nav-pills .nav-link:hover{
+  text-decoration: underline;
+  color: white;
 }
 
-.social-btn:hover{
-  color: var(--primary);
-  background-color: var(--primary);
-}
-
-.copyright-p,
-.copyright-p a 
-{
-  font-size: 0.75rem;
-  color: var(--primary);
-}
-
-.copyright-p a:hover{
-  color: var(--background);
+.nav-pills .nav-link:focus{
+  text-decoration: none;
+  color: white;
 }
