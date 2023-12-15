@@ -1,0 +1,12 @@
+name: Css Task
+description: Issue for css task
+title: 'HTML TASK: '
+labels: Html Task
+projects: ['Erikas-Ramanauskas/4']
+body:
+- type: textarea
+  attributes:
+    label: "Description:"
+- type: markdown
+  attributes:
+    value: "Thanks for contributing to the Christmas-hackathon!"

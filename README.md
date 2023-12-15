@@ -108,3 +108,43 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+| # | Feature | Desirability | Importance | Viability | Delivered |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| | Home page | | | | |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Hero section | 5 | 5 | 5 | ✅ |
+| 2 | recipie section | 5 | 5 | 5 | ❌ |
+| 3 | contact us section | 5 | 5 | 5 | ✅ |
+| 4 | some other crazy idea | 2 | 3 | 5 | ✅ |
+| -- | --- | --- | --- | --- | --- |
+| | sdhgj | | | | |
+| --- | --- | --- | --- | --- | --- |
+| 5 | safd | 5 | 5 | 5 | ❌ |
+| 6 | gs | 5 | 5 | 5 | ❌ |
+| 7 | dfg | 5 | 5 | 5 | ❌ |
+| 8 | df | 5 | 5 | 5 | ❌ |
+| 9 | gs | 5 | 5 | 5 | ❌ |
+| 10 | dgfh | 5 | 5 | 5 | ❌ |
+| -- | --- | --- | --- | --- | --- |
+| | Game page | | | | |
+| --- | --- | --- | --- | --- | --- |
+| -- | --- | --- | --- | --- | --- |
+| | Kitchen Page | | | | |
+| --- | --- | --- | --- | --- | --- |
+| -- | --- | --- | --- | --- | --- |
+| | Creators page | | | | |
+| --- | --- | --- | --- | --- | --- |
+| -- | --- | --- | --- | --- | --- |
+| | Game rules page | | | | |
+| --- | --- | --- | --- | --- | --- |
+| -- | --- | --- | --- | --- | --- |
+| | Unique hero ideas | | | | |
+| --- | --- | --- | --- | --- | --- |
+| 11 | 3 diferent colour dice turns in to 2 black dice | | | | ❌ |
+| 12 | Sacrifice 3 life to get black random dice | | | | ❌ |
+| 13 | Have more dice overal then other heroes | | | | ❌ |
+| 14 | Turning certain 2 colour dice (Example blue) rewards 2 black random dice | | | | ❌ |
+| 15 | Sacrifice any dice to take away singe vilain fighting square | | | | ❌ |
+| 16 | Sarcifiice a dice to rerol 2 other dice | | | | ❌ |									
