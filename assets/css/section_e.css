@@ -1,0 +1,51 @@
+#section-e {
+  margin: 0rem;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/section_e_background.webp);
+  background-size: cover;
+}
+
+#section-e > h1 {
+  position: absolute;
+  top: 12vmin;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#e-image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+.e-image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.e-member {
+  position: relative;
+}
+
+.e-member-name {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1.5rem;
+  bottom: 0;
+  right: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: sans-serif;
+}
+
+.e-member-name:hover,
+.e-member-name:focus {
+  text-decoration: underline;
+}
