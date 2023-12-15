@@ -39,6 +39,10 @@
   --border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--main font);
   font-weight: 200;
@@ -48,6 +52,38 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+}
+
+main{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
+main  > section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+main  > section:nth-child(3n){
+  background-color: var(--accent);
+}
+
+main > section:nth-child(3n-1){
+  background-color: var(--primary);
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link{
+  color: white;
 }
 
 
