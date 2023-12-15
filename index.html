@@ -70,8 +70,54 @@
     </section>
     <!-- Contact Section "SECTION C" -->
     <section id="section-c">
-      <div>
-        <h1>Section C</h1>
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h3>
+                Share a Recipe With Us
+              </h3>
+            </div>
+          </div>
+        <!-- Form to suggest recipe -->
+          <form id="form_suggestion" action="#">
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <label for="title">Recipe's name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <input id="title" name="title" type="text" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <label for="ingredients">Ingredients</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <textarea name="ingredients" id="ingredients" cols="30" rows="8"  required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <label for="instruction">Instructions</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <textarea name="instruction" id="instruction" cols="30" rows="8"  required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <button id="form-btn" type="button" class="btn btn-success">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <!-- Team Section "SECTION D" -->
