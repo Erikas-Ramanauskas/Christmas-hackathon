@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="#" />
+    <meta name="keywords" content="#" />
+
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- EmailJS -->
+
+    <!-- MailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("zTLiX8hsWc1NuiPs_");
+        })();
+    </script>
+
+    <title>Christmas Advent</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav id="main-navbar" class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="nav nav-pills ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-a">Section A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-b">Section B</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-c">Section C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-d">Section D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-e">Section E</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-f">Section F</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-g">Section G</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <!-- Hero Section "SECTION A" -->
+        <section id="section-a">
+            <div>
+                <h1>Section A</h1>
+            </div>
+        </section>
+        <!-- Card section "SECTION B" -->
+        <section id="section-b">
+            <div>
+                <h1>Section B</h1>
+            </div>
+        </section>
+        <!-- Sharing Recipe Section "SECTION C" -->
+        <section id="section-c">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <h3>
+                                Share a Recipe With Us
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Form to suggest recipe -->
+                    <form id="form-recipe">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <label for="title">Recipe's name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <input id="title" name="title" type="text" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <label for="ingredients">Ingredients</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <textarea name="ingredients" id="ingredients" cols="30" rows="8" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <label for="instructions">Instructions</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <textarea name="instructions" id="instructions" cols="30" rows="8" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <button id="form-btn" type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section "SECTION D" -->
+        <section id="section-d">
+            <div>
+                <h1>Section D</h1>
+            </div>
+        </section>
+        <!-- Hero Section "SECTION E" -->
+        <section id="section-e">
+            <div>
+                <h1>Section E</h1>
+            </div>
+        </section>
+        <!-- Hero Section "SECTION F" by Frank Arellano -->
+        <section id="section-f">
+            <div>
+                <h1>Section F</h1>
+            </div>
+        </section>
+        <!-- Contact Section "SECTION G" by Frank Arellano -->
+        <div class="container my-5" id="section-g">
+            <section class="row d-flex justify-content-center align-items-center mb-5">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+
+                    <!-- User Feedback -->
+                    <div id="email_sent" class="container my-4"></div>
+
+                    <!-- Main Card -->
+                    <form id="contactForm" class="card p-0" onsubmit="return sendMail(this, event);" autocomplete="on">
+
+                        <!-- Header -->
+                        <div class="card-header text-center h5">Contact Form</div>
+
+                        <!-- Body -->
+                        <div class="card-body">
+                            <!-- Name Input -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input autocomplete="name" name="from_name" class="form-control" id="name"
+                                    aria-describedby="nameHelp" required auto>
+                                <div id="nameHelp" class="form-text">We need your name, how should we call you?.</div>
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input autocomplete="email" name="emailaddress" type="email" class="form-control"
+                                    id="email" aria-describedby="emailHelp" required>
+                                <div id="emailHelp" class="form-text">We value your privacy and will never share
+                                    your
+                                    email.
+                                </div>
+                            </div>
+
+                            <!-- Subject Input -->
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input autocomplete="on" name="the_subject" type="text" class="form-control"
+                                    id="subject" aria-describedby="subjectHelp" required>
+                                <div id="subjectHelp" class="form-text">Please provide a clear subject line.</div>
+                            </div>
+
+                            <!-- Message Input -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea autocomplete="on" name="the_idea" type="text" class="form-control"
+                                    id="message" rows="7" cols="7" aria-describedby="messageHelp" required></textarea>
+                                <div id="messageHelp" class="form-text">Feel free to express your ideas or issues.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <button id="send_button" type="submit" class="text-center card-footer btn btn-primary border-0">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+    </main>
+    <!-- JS -->
+
+    <script defer src="assets/js/section_g.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <!--Font Awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
+        integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
