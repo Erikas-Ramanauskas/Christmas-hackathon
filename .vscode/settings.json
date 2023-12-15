@@ -23,5 +23,7 @@
    "files.autoSave": "onFocusChange",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.formatOnPaste": true,
+   "editor.formatOnSave": true
 }
