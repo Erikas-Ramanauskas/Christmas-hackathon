@@ -26,5 +26,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  }
 }
