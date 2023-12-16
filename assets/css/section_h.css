@@ -1,0 +1,18 @@
+/* Style for calendar doors */
+.hCalendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.door {
+  width: auto;
+  height: auto;
+  background-color: #f0f0f0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

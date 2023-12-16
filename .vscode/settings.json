@@ -29,5 +29,8 @@
   "liveServer.settings.port": 5501,
   "[javascript]": {
     "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
   }
 }
