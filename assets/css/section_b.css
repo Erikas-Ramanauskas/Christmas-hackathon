@@ -1,0 +1,153 @@
+.bsection {
+  background-color: #eaeaea;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.bcontainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #f5f5f5;
+  box-shadow: 0 30px 50px #dbdbdb;
+}
+#bslide {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  margin-top: 50px;
+}
+.bitem {
+  width: 17%;
+  height: 30%;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.5s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #505050;
+}
+.bitem:nth-child(1),
+.bitem:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+}
+.bitem:nth-child(3) {
+  right: 40%;
+  top: 65%;
+  min-width: 140px;
+  max-width: 200px;
+}
+.bitem:nth-child(4) {
+  right: 30%;
+  min-width: 140px;
+  max-width: 200px;
+  top: 60%;
+}
+.bitem:nth-child(5) {
+  right: 20%;
+  top: 55%;
+  min-width: 140px;
+  max-width: 200px;
+}
+.bitem:nth-child(n + 6) {
+  right: 5%;
+  min-width: 140px;
+  max-width: 200px;
+  opacity: 0;
+}
+
+.bitem .bcontent {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 300px;
+  text-align: left;
+  padding: 0;
+  color: #eee;
+  transform: translate(0, -50%);
+  display: none;
+  font-family: system-ui;
+}
+
+@media screen and (min-width: 768px) {
+  .bitem .bcontent {
+    top: 50%;
+  }
+}
+
+.bitem:nth-child(2) .bcontent {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 30px;
+  display: block;
+  z-index: 11111;
+}
+.bitem .bname {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 1 forwards;
+}
+@media screen and (min-width: 768px) {
+  .bitem .bname {
+    font-size: 40px;
+  }
+}
+
+.bitem .bdes {
+  margin: 20px 0;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+.bitem button {
+  padding: 10px 20px;
+  border: none;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+@keyframes showcontent {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+}
+.bbuttons {
+  position: absolute;
+  bottom: 10%;
+  z-index: 222222;
+  text-align: center;
+  width: 100%;
+  right: -20%;
+}
+.bbuttons button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  transition: 0.5s;
+}
+.bbuttons button:hover {
+  background-color: #bac383;
+}
