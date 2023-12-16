@@ -1,0 +1,16 @@
+/* Generalities */
+
+.text-justify{
+    text-align: justify;
+}
+
+/* FAQ */
+
+.faq-question{
+    text-align: left;
+}
+
+.faq-answer{
+    text-align: justify;
+    font-size: 0.9rem;
+}
