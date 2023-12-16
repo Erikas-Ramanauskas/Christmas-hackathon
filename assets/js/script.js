@@ -11,13 +11,13 @@ function snowflakeCreation() {
   snowflake.style.animationDuration = animationDuration + "s";
   snowflake.style.opacity = Math.random();
 
-  const direction = Math.random() * 2001 - 1000;
-  snowflake.animate(
-    {
-      transform: `translateX(${direction}px)`,
-    },
-    { duration: animationDuration * 1000, iterations: Infinity }
-  );
+  // const direction = Math.random() * 2001 - 1000;
+  // snowflake.animate(
+  //   {
+  //     transform: `translateX(${direction}px)`,
+  //   },
+  //   { duration: animationDuration * 1000, iterations: Infinity }
+  // );
 
   section.appendChild(snowflake);
   setTimeout(() => {
@@ -25,4 +25,6 @@ function snowflakeCreation() {
   }, animationDuration * 1000);
 }
 
-setInterval(snowflakeCreation, Math.random() * 200);
+console.log(window.innerWidth);
+
+setInterval(snowflakeCreation, (Math.random() * window.innerWidth) / 5);
