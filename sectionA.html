@@ -7,7 +7,7 @@
 
     <meta name="description" content="#" />
     <meta name="keywords" content="#" />
-    <link rel="stylesheet" href="assets/css/SectionA.css" />
+    <link rel="stylesheet" href="assets/css/sectionA.css" />
     <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -37,21 +37,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="container-section-a collapse navbar-collapse justify-content-between"
-          id="navbarNav"
-        >
-          <a class="nav-link nav-logo" href="/"
-            ><img
-              class="nav-logo"
-              src="assets/images/_Red Minimal Modern Simple Illustrated Christmas  Market  Logo-PhotoRoom (1).png"
-              alt=""
-              srcset=""
-          /></a>
-          <ul
-            class="nav nav-pills d-flex justify-content-center align-items-center"
-          >
-            <li class="nav-item nav-logo"></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="navbar-brand mx-5" href="/">Logo</a>
+          <ul class="navbar-nav mx-auto flex-fill justify-content-center">
             <li class="nav-item">
               <a class="nav-link" href="#section-a">Section A</a>
             </li>
@@ -87,31 +75,42 @@
       tabindex="0"
     >
       <!-- Hero Section "SECTION A" -->
-      <section id="section-a">
-        <div class="snowflakes" aria-hidden="true">
-          <div class="snowflake">❅</div>
-        </div>
-
-        <div class="container-section-a">
-          <div class="column-1 col-lg-6 col-md-9 pe-lg-5">
-            <h1 class="cta-heading">Discover Global kitchens!</h1>
-            <p>
-              Celebrate the Season with Joyful Recipes: A Christmas Feast for
-              Everyone!
-            </p>
-            <a href="#">Get Inspired!</a>
+      <section id="section-a" class="d-flex flex-column">
+        <div class="container-fluid">
+          <div class="timer d-flex justify-content-center">
+            <div class="countdown-container d-flex flex-wrap justify-content-center align-items-start w-100">
+              <div class="time day">100</div>
+              <span class="text me-3 mt-2">D</span>
+              <div class="time hour">100</div>
+              <span class="text me-3 mt-2">H</span>
+              <div class="time minute">100</div>
+              <span class="text me-3 mt-2">M</span>
+              <div class="time second">100</div>
+              <span class="text me-3 mt-2">S</span>
+            </div>
           </div>
-
-          <!-- <div class="column-2 colg-lg-6 col-md-12">
+        </div>
+        <div class="container-fluid">
+          <div class="container-section-a d-flex">
+            <div class="row col-md-7 pe-lg-5">
+              <h1 class="cta-heading mt-5">Festive flavors for December treats!</h1>
+              <p class="mt-5 ">
+                Celebrate the Season with Joyful Recipes: A Christmas Feast for
+                Everyone!
+              </p>
+              <a href="#" type="button" class="btn btn-danger">Get Inspired!</a>
+            </div>
           
-            <img
-            src="./assets/images/xmas-table.jpg"
+            <div class="row col-md-8">
+              <div class="container-hero-img p-3 mt-5">
+                <img
+            src="https://imgur.com/AhvBLty.png"
             alt="christmas-table"
-            class="img-hero-section"
-            width="500"
-          />
+            class="img-hero-section p-0 col-md-12"
+              />
+              </div>
+            </div>
           
-        </div> -->
         </div>
       </section>
       <!-- Card section "SECTION B" -->
@@ -173,6 +172,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./assets/js/sectionA.js"></script>
-    <script src="https://app.embed.im/snow.js" defer></script>
   </body>
 </html>
