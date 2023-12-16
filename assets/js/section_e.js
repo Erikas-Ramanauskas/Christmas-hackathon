@@ -67,9 +67,16 @@ function ePopulateTeamMembers() {
   }
 }
 
+// Populate the team members
 ePopulateTeamMembers();
 
-const ehandleOnDown = (e) => (etrack.dataset.mouseDownAt = e.clientX);
+/* -- Event Handlers -- */
+let scrollPosition;
+
+function ehandleOnDown(e) {
+  e.preventDefault();
+  etrack.dataset.mouseDownAt = e.clientX;
+}
 
 const ehandleOnUp = () => {
   etrack.dataset.mouseDownAt = "0";
@@ -104,6 +111,10 @@ const ehandleOnMove = (e) => {
     );
   }
 };
+
+function preventDefault(e) {
+  e.preventDefault();
+}
 
 /* -- Event listener Trigers -- */
 
