@@ -24,12 +24,29 @@
   --title-font: "merry_christmas_flakeregular", sans-serif;
   --main-font: "Playfair Display", serif;
 
-  /* Colours */
-  --text: rgb(0, 0, 0);
-  --background: rgb(255, 255, 255);
-  --primary: rgb(255, 0, 0);
-  --secondary: rgb(0, 255, 0);
-  --accent: rgb(0, 0, 255);
+  /* --text: #287a61;
+  --background: #c1c8ce;
+  --primary: #5ba99c;
+  --secondary: #ff7572;
+  --accent: #764e2b; */
+
+  --text: #30360f;
+  --background: #e6dcd1;
+  --primary: #924f28;
+  --secondary: #cc9664;
+  --accent: #ca401b;
+
+  /* --background: #3d4d2f;
+  --text: #dee2e6;
+  --primary: #a1242a;
+  --secondary: #ae3932;
+  --accent: #c88554; */
+
+  /* --text: #e8c38b;
+  --background: #6c2f2b;
+  --primary: #ab825c;
+  --secondary: #bd5438;
+  --accent: #b43b2b; */
 
   /* Utility */
   --small-boxshadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -45,7 +62,7 @@ body {
   font-family: var(--main font);
   font-weight: 200;
   letter-spacing: 2px;
-  /* color: whitesmoke !important; */
+  color: var(--text);
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -71,21 +88,20 @@ main > section {
   scroll-snap-stop: always;
 }
 
-main > section:nth-child(3n) {
+main > section:nth-child(4n) {
   background-color: var(--accent);
 }
 
-main > section:nth-child(3n-1) {
+main > section:nth-child(4n-1) {
   background-color: var(--primary);
 }
 
-main > section:nth-child(3n-2) {
+main > section:nth-child(4n-2) {
   background-color: var(--secondary);
 }
 
 section div h1 {
   font-size: 5rem;
-  color: #ffffff;
 }
 
 h1,
@@ -96,6 +112,7 @@ h5,
 h6 {
   font-family: var(--title-font);
   letter-spacing: 2px;
+  color: var(--text);
 }
 
 /* text color variable used for background color */
@@ -188,9 +205,9 @@ h6 {
 
 @keyframes snowfall {
   from {
-    transform: translateY(-100vh) translateY(0) scale(1);
+    transform: translateY(-99vh) translateY(0) scale(1);
   }
   to {
-    transform: translateY(-1vh) scale(0.2);
+    transform: translateY(-1vh) scale(0.3);
   }
 }
