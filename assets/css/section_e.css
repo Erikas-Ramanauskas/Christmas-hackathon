@@ -2,8 +2,9 @@
   margin: 0rem;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/section_e_background.webp);
-  background-size: cover;
+
+  /* background-image: url(../images/section_e_background.webp);
+  background-size: cover; */
 }
 
 #section-e > h1 {
