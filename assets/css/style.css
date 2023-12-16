@@ -183,7 +183,7 @@ h6 {
   background-color: #def7ff;
   box-shadow: 0 0 5px 5px #b6edff;
   animation: snowfall linear infinite;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s linear;
 }
 
 @keyframes snowfall {
