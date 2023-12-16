@@ -84,10 +84,3 @@ async function hFetchCalendarData() {
         console.error('Error fetching JSON data: ', error);
     }
 }
-
-// // Close modal when clicking outside the modal
-// window.addEventListener('click', (event) => {
-//     if (event.target === modal) {
-//         modal.style.display = 'none';
-//     }
-// });
