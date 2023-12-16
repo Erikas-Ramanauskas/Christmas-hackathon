@@ -2,10 +2,27 @@
 
 // Create snowflakes
 const section = document.getElementById("snowfall");
-for (let i = 0; i < 75; i++) {
+
+function snowflakeCreation() {
   const snowflake = document.createElement("div");
   snowflake.classList.add("snowflake");
   snowflake.style.left = Math.random() * window.innerWidth + "px";
-  snowflake.style.animationDuration = Math.random() * 60 + 60 + "s";
+  const animationDuration = Math.random() * 40 + 20;
+  snowflake.style.animationDuration = animationDuration + "s";
+  snowflake.style.opacity = Math.random();
+
+  const direction = Math.random() * 2001 - 1000;
+  snowflake.animate(
+    {
+      transform: `translateX(${direction}px)`,
+    },
+    { duration: animationDuration * 1000, iterations: Infinity }
+  );
+
   section.appendChild(snowflake);
+  setTimeout(() => {
+    snowflake.remove();
+  }, animationDuration * 1000);
 }
+
+setInterval(snowflakeCreation, Math.random() * 200);

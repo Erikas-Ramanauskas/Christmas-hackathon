@@ -3,21 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Marmelad&family=Poller+One&display=swap");
 
 @font-face {
-    font-family: 'merry_christmas_flakeregular';
-    src: url('../font/merrychristmasflake-webfont.woff2') format('woff2'),
-         url('../font/merrychristmasflake-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "merry_christmas_flakeregular";
+  src: url("../font/merrychristmasflake-webfont.woff2") format("woff2"),
+    url("../font/merrychristmasflake-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'merry_christmas_starregular';
-    src: url('../font/merrychristmasstar-webfont.woff2') format('woff2'),
-         url('../font/merrychristmasstar-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "merry_christmas_starregular";
+  src: url("../font/merrychristmasstar-webfont.woff2") format("woff2"),
+    url("../font/merrychristmasstar-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Global variables. if used for as value do this: var(--variable-name) */
@@ -50,11 +48,12 @@ body {
   /* color: whitesmoke !important; */
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding: 0;
   margin: 0;
 }
 
-main{
+main {
   height: 100vh;
   width: 100vw;
   padding: 0;
@@ -62,7 +61,7 @@ main{
   scroll-snap-type: y proximity;
 }
 
-main  > section{
+main > section {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -72,15 +71,15 @@ main  > section{
   scroll-snap-stop: always;
 }
 
-main  > section:nth-child(3n){
+main > section:nth-child(3n) {
   background-color: var(--accent);
 }
 
-main > section:nth-child(3n-1){
+main > section:nth-child(3n-1) {
   background-color: var(--primary);
 }
 
-main > section:nth-child(3n-2){
+main > section:nth-child(3n-2) {
   background-color: var(--secondary);
 }
 
@@ -106,12 +105,12 @@ h6 {
 
 /* text color variable used for text color */
 .color-text-text {
-    color: var(--text);
+  color: var(--text);
 }
 
 /* background color variable used for background */
 .color-bg-bg {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 /* background color variable used for text */
@@ -151,8 +150,7 @@ h6 {
 
 /* navigation bar */
 
-
-.nav-link{
+.nav-link {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   margin: 0.5rem;
@@ -161,17 +159,16 @@ h6 {
   padding: 0.4rem 0.6rem;
 }
 
-
-.nav-pills .nav-link.active{
+.nav-pills .nav-link.active {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.nav-pills .nav-link:hover{
+.nav-pills .nav-link:hover {
   text-decoration: underline;
   color: white;
 }
 
-.nav-pills .nav-link:focus{
+.nav-pills .nav-link:focus {
   text-decoration: none;
   color: white;
 }
@@ -186,16 +183,14 @@ h6 {
   background-color: #def7ff;
   box-shadow: 0 0 5px 5px #b6edff;
   animation: snowfall linear infinite;
+  transition: transform 0.5s ease-in-out;
 }
 
 @keyframes snowfall {
-  0% {
-    transform: translateY(-100vh) translateX(0) scale(1);
+  from {
+    transform: translateY(-100vh) translateY(0) scale(1);
   }
-  50% {
-    transform: translateY(100vh) translateX(0) scale(0.2);
-  }
-  100% {
-    transform: translateY(100vh) translateX(0) scale(0.0);
+  to {
+    transform: translateY(-1vh) scale(0.2);
   }
 }
