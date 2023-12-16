@@ -36,6 +36,16 @@
   border-radius: 20px;
   box-shadow: 0 30px 50px #505050;
 }
+.bitem .bcard-text {
+  opacity: 0;
+}
+
+.bitem:nth-child(3) .bcard-text,
+.bitem:nth-child(4) .bcard-text,
+.bitem:nth-child(5) .bcard-text {
+  opacity: 1;
+}
+
 .bitem:nth-child(1),
 .bitem:nth-child(2) {
   left: 0;
@@ -150,4 +160,25 @@
 }
 .bbuttons button:hover {
   background-color: #bac383;
+}
+
+.bnext-icon,
+.bprev-icon {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.bholder {
+  position: relative;
+}
+
+.bcard-text {
+  position: absolute;
+  font-family: Marmelad, sans-serif;
+  top: 220px;
+  left: 10px;
+  color: wheat;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px;
+  border-radius: 12px;
 }
