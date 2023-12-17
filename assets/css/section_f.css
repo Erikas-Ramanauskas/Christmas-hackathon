@@ -7,6 +7,7 @@
 
 #faq-section > div{
     max-height: 90vh;
+    overflow-y: auto;
 }
 
 #faq-section .card{
@@ -19,6 +20,7 @@
 
 .faqCard > button.collapsed{
     background-color: var(--main-2);
+    color: var(--text)
 }
 
 .faqCard > button{
