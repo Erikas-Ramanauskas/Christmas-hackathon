@@ -29,13 +29,13 @@ Our team tackled the relevant criteria:
 
 ## Goal
 
-➡️ Problem Statement:
+➡️ Problem Statement: Despite the widespread interest in diverse European Christmas foods, there is a lack of centralized and accessible platforms that curate authentic recipes, hindering individuals' ability to easily explore and incorporate traditional holiday cuisine into their celebrations.
 
-➡️ Objective(s):
+➡️ Objective(s): Create an interactive Christmas Advent Calendar website with the objectives of curating authentic European holiday recipes, fostering cultural awareness, engaging users through a daily recipe format, ensuring accessibility, promoting social sharing, employing responsive design and instilling festive spirit.
 
-➡️ Target Audience:
+➡️ Target Audience: The target audience for a Christmas Advent website showcasing different European Christmas foods includes food enthusiasts, holiday celebrators, cultural explorers, families, cooking enthusiasts, travel enthusiasts, and social media users interested in festive, European-inspired cuisine.
 
-➡️ Benefits:
+➡️ Benefits: The benefit of Christmas Advent calendar websites featuring diverse European Christmas foods lies in providing a unique and engaging platform that enhances user enjoyment of the holiday season by offering authentic recipes, fostering cultural exploration, and catering to the interests of food enthusiasts, holiday celebrators, and those seeking creative and festive culinary inspiration.
 
 ## Design
 
@@ -47,7 +47,16 @@ The project incorporates Christmas-inspired colours like red, green, and gold, a
 
 ### Fonts used
 
+For a more festive feel, we have chosen a special fonts associated with Christmas:
+"merry_christmas_flakeregular", sans-serif.
+
+We also used the following Google fonts:
+"Bitter", serif;
+"Dosis", sans-serif;
+
 ### Wireframes
+
+Wireframe mockups can be found in the "documentation" folder. These were created using Balsamiq.
 
 ## Features
 
@@ -118,6 +127,7 @@ The project also utilizes the following frameworks, libraries, and programs:
 - JSON: to store data.
 - Google sheets: to plan and organize data.
 - Miro: to create brainstorm ideas in real-time.
+- Balsamiq: to create the wireframes for the website.
 
 ## Manual Testing
 
