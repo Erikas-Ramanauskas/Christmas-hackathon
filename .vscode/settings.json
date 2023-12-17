@@ -28,10 +28,10 @@
   "editor.formatOnSave": true,
   "liveServer.settings.port": 5501,
   "[javascript]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "HookyQR.beautify"
