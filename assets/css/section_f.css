@@ -1,4 +1,40 @@
 /* Generalities */
+#faq-section{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+#faq-section > div{
+    max-height: 90vh;
+}
+
+#faq-section .card{
+    color: white;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--main-2);
+    border: 1px solid #f7ef8acc;
+}
+
+.faqCard > button.collapsed{
+    background-color: var(--main-2);
+}
+
+.faqCard > button{
+    background-color: var(--main-1);
+}
+
+.faqCard > button:hover{
+    background-color: var(--main-1);
+    color: #f7ef8acc;
+}
+
+
+
+#faq-section h2{
+    color: #f7ef8acc;
+}
 
 .text-justify{
     text-align: justify;
