@@ -22,8 +22,8 @@ async function bFetchJson() {
 }
 
 function createImgList(arr) {
-  return arr
-    .map(
+  return shuffleArray(
+    arr.map(
       ({ id, name, country, image_url }) =>
         `
                     <div
@@ -36,15 +36,21 @@ function createImgList(arr) {
               <div class="bcontent">
                 <div class="bname">${country}</div>
                 <div class="bdes">${name}</div>
+                <div class="bBtnWrap">
                  <a class="bToCalendar" data-id="${id}" href="#section-h">SEE MORE</a>
-              </div>
+                 </div>
+                 </div>
+
             </div>
       `
     )
-    .join("");
+  ).join("");
 }
 
 bFetchJson().then((data) => {
-  galleryContainer.insertAdjacentHTML("afterbegin", createImgList(data));
-  galleryContainer.innerHTML(createImgList(data));
+  galleryContainer.innerHTML = createImgList(data);
 });
+
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}

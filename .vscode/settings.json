@@ -34,6 +34,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

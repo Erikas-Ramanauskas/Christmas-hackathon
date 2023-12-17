@@ -103,7 +103,7 @@
 }
 
 .bitem:nth-child(2) .bcontent {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 30px;
   display: block;
@@ -155,10 +155,8 @@
 
 @media screen and (min-width: 768px) {
   .bbuttons {
-      bottom: 10%;
-   
+    bottom: 10%;
   }
-
 }
 
 .bbuttons button {
@@ -191,33 +189,45 @@
   left: 10px;
   color: wheat;
   font-size: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 12px;
   border-radius: 12px;
 }
 
 @media screen and (min-width: 768px) {
   .bitem .bcontent {
-     font-size: 20px;
+    font-size: 20px;
   }
 }
 
 .bToCalendar {
-  background-color: var(--main-1);
+  background-color: var(--main-2);
+  font-family: Dosis, sans-serif;
+  font-weight: 600;
   border: none;
-  color: white;
+  color: wheat;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   transition: 0.3s;
   cursor: pointer;
-  border-radius: 8px; 
+  border-radius: 6px;
 }
 
 .bToCalendar:hover {
-  background-color: var(--main-2); 
-  box-shadow: var(--shadow); 
+  background-color: var(--main-1);
+  box-shadow: 0 2px 5px rgb(201, 197, 190);
+}
+
+.bBtnWrap {
+  display: inline-block;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  padding: 3px;
+}
+
+.bdes {
+  font-weight: 600;
 }
