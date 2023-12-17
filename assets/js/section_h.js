@@ -59,16 +59,16 @@ async function hDisplayModal(recipeId) {
     hImageRecipe.setAttribute('src', `${contentImage}`);
     hCountryRecipe.innerHTML = `${contentCountry}`;
 
-    let ingredientsHtml = '<h4>Ingredients</h4><ul>';
+    let ingredientsHtml = '<h4 class="recipe-subtitle">Ingredients</h4><ul>';
     contentIngredients.forEach((ingredient) => {
         ingredientsHtml += `<li>${ingredient}</li>`;
     });
     ingredientsHtml += '</ul>';
     hIngredientsRecipe.innerHTML = ingredientsHtml;
 
-    let instructionsHtml = '<h4 class="text-justify">Instructions</h4>';
+    let instructionsHtml = '<h4 class="recipe-subtitle">Instructions</h4>';
     contentInstructions.forEach((ingredient) => {
-        instructionsHtml += `<p>${ingredient}</p>`;
+        instructionsHtml += `<p class="text-justify">${ingredient}</p>`;
     });
     hInstructionsRecipe.innerHTML = instructionsHtml;
 }
