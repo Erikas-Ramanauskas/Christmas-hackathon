@@ -1,6 +1,19 @@
 /* font link
  */
-@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Marmelad&family=Poller+One&display=swap");
+/* Poppins & Dancing Script */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap");
+
+/* Dosis & Bitter */
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Dosis&display=swap");
+
+/* Abril Fatface, Oswald & Karla */
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla&family=Oswald&display=swap");
+
+/* Josefin Sans & Crimson Text  */
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans&display=swap");
 
 @font-face {
   font-family: "merry_christmas_flakeregular";
@@ -10,19 +23,13 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "merry_christmas_starregular";
-  src: url("../font/merrychristmasstar-webfont.woff2") format("woff2"),
-    url("../font/merrychristmasstar-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Global variables. if used for as value do this: var(--variable-name) */
 :root {
   /* fonts */
-  --title-font: "merry_christmas_flakeregular", sans-serif;
-  --main-font: "Playfair Display", serif;
+  --special-font: "merry_christmas_flakeregular", sans-serif;
+
+  --title-font: "Bitter", serif;
+  --main-font: "Dosis", sans-serif;
 
   --text: #ffffff;
   --main-1: #007536;

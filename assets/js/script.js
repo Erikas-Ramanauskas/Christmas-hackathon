@@ -12,7 +12,7 @@ function snowflakeCreation() {
   snowflake.style.animationDuration = animationDuration + "s";
   snowflake.style.opacity = Math.random() * 0.7 + 0.3;
 
-  const direction = Math.random() * 2001 - 1000;
+  const direction = (Math.random() * 1001 - 500)* window.innerWidth / 1000 ;
   snowflake.animate(
     {
       transform: `translateX(${direction}px)`,
