@@ -5,7 +5,7 @@
 }
 
 .logo {
-  width: 80px;
+  width: 3rem;
   transform: rotate(-10deg);
   margin-left: 30px;
 }
@@ -67,13 +67,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to right,
-    #ae8625,
-    #f7ef8a,
-    #d2ac47,
-    #edc967
-  );
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
 
   border-radius: 35px;
   box-shadow: 3px 5px 1px #886719, inset 2px 2px 3px #f8f3a4;
@@ -412,7 +406,6 @@ a {
     height: 48px;
     margin-top: 50px;
   }
-
 
   #home-section p {
     font-size: 20px;
