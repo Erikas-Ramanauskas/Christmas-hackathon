@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/section_e.css" />
   <link rel="stylesheet" href="assets/css/section_f.css" />
   <link rel="stylesheet" href="assets/css/section_h.css" />
+  <link rel="stylesheet" href="assets/css/section_g.css" />
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -281,7 +282,7 @@
 
     <!-- Section "SECTION G" -->
     <section id="contact-section">
-      <div class="container my-5" id="contact-section">
+      <div class="container my-5">
         <div class="row d-flex justify-content-center align-items-center mb-5">
           <div class="col-lg-6 col-md-12 col-sm-12">
 
@@ -289,54 +290,48 @@
             <div id="email_sent" class="container my-4"></div>
 
             <!-- Main Card -->
-            <form id="contactForm" class="card p-0" onsubmit="return sendMail(this, event);" autocomplete="on">
+            <form id="contactForm" class="card p-0 h-border" onsubmit="return sendMail(this, event);" autocomplete="on">
 
               <!-- Header -->
-              <div class="card-header text-center h5">Contact Form</div>
+              <h2 class="card-header text-center h5">Contact Form</h2>
 
               <!-- Body -->
               <div class="card-body">
                 <!-- Name Input -->
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input autocomplete="name" name="from_name" class="form-control" id="name" aria-describedby="nameHelp"
+                  <input autocomplete="name" name="from_name" class="form-control h-border" id="name" aria-describedby="nameHelp" placeholder="how do we call you?"
                     required auto>
-                  <div id="nameHelp" class="form-text">We need your name, how should we call you?.</div>
                 </div>
 
                 <!-- Email Input -->
                 <div class="mb-3">
                   <label for="email" class="form-label">Email Address</label>
-                  <input autocomplete="email" name="emailaddress" type="email" class="form-control" id="email"
-                    aria-describedby="emailHelp" required>
-                  <div id="emailHelp" class="form-text">We value your privacy and will never share
-                    your
-                    email.
-                  </div>
+                  <input autocomplete="email" name="emailaddress" type="email" class="form-control h-border" id="email"
+                    aria-describedby="emailHelp" placeholder="How do we contact you?" required>
                 </div>
 
                 <!-- Subject Input -->
                 <div class="mb-3">
                   <label for="subject" class="form-label">Subject</label>
-                  <input autocomplete="on" name="the_subject" type="text" class="form-control" id="subject"
+                  <input autocomplete="on" name="the_subject" type="text" class="form-control h-border" id="subject" placeholder="What is your message about?"
                     aria-describedby="subjectHelp" required>
-                  <div id="subjectHelp" class="form-text">Please provide a clear subject line.</div>
                 </div>
 
                 <!-- Message Input -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <textarea autocomplete="on" name="the_idea" type="text" class="form-control" id="message" rows="7"
-                    cols="7" aria-describedby="messageHelp" required></textarea>
-                  <div id="messageHelp" class="form-text">Feel free to express your ideas or issues.
+                  <textarea autocomplete="on" name="the_idea" type="text" class="form-control h-border" id="message" rows="7"
+                    cols="7" aria-describedby="messageHelp" placeholder="Let us know if you have any qestions or would like to sugest a recipie" required></textarea>
                   </div>
-                </div>
               </div>
 
               <!-- Footer -->
-              <button id="send_button" type="submit" class="text-center card-footer btn btn-primary border-0">
-                Send
-              </button>
+              <div id="g-send-container" class="card-footer">
+                <div>
+                  <button id="send_button" type="submit" class="btn">Send</button>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -355,6 +350,8 @@
   <script defer src="assets/js/section_e.js"></script>
   <script defer src="assets/js/section_f.js"></script>
   <script defer src="assets/js/section_h.js"></script>
+  <script defer src="assets/js/section_g.js"></script>
+  
   <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
