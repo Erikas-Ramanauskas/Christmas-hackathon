@@ -18,6 +18,11 @@
 }
 
 /* Calendar Model Styling */
+
+.modal-content {
+  background-color: var(--main-2);
+}
+
 .metadata {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,7 +32,7 @@
 
 .recipe-metadata {
   margin: 0 auto;
-  background-color: #b8b8b8;
+  background-color: var(--main-1);
   border-radius: 15px;
   /* padding: 5px; */
   margin-top: 5px;
