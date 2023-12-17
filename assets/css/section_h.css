@@ -22,7 +22,7 @@
       #d2ac47,
       #edc967);
   ;
-  border: none;
+  border: 4px solid var(--main-2);
   font-size: 1.5rem;
 }
 
