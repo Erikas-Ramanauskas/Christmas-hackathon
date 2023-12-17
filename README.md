@@ -2,20 +2,20 @@
 
 Welcome to Christmas Advent! Get ready for a delicious journey this holiday season. Explore our Advent Calendar for a new and tasty Christmas recipe every day. These recipes are inspired by the yummy traditions of different European countries. Enjoy the festive spirit with us!
 
-![am-i-responsive]()
+![am-i-responsive](https://github.com/zaicodes/Christmas-hackathon/blob/zai-one/assets/documentation/am-i-responsive.png)
 
 Feel free to access the [live website](https://erikas-ramanauskas.github.io/Christmas-hackathon/) (CTRL + Click to open in a new tab).
 
 ## Table of Contents
 
-1. [](#)
-2. [](#)
-3. [](#)
-4. [](#)
-5. [](#)
-6. [](#)
-7. [](#)
-8. [](#)
+1. [Table of Contents](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#table-of-contents)
+2. [Criteria](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#criteria)
+3. [Goal](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#goal)
+4. [Design](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#design)
+5. [Features](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#features)
+6. [Technologies Used](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#technologies-used)
+7. [Manual Testing](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#manual-testing)
+8. [Credits](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#credits)
 
 ## Criteria
 
@@ -43,7 +43,7 @@ Our team tackled the relevant criteria:
 
 The project incorporates Christmas-inspired colours like red, green, and gold, as well as white and black.
 
-![]()
+![](https://github.com/zaicodes/Christmas-hackathon/blob/zai-one/assets/documentation/colours.png)
 
 ### Fonts used
 
