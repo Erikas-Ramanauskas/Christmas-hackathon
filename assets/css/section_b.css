@@ -16,15 +16,17 @@
   background-color: #f5f5f5;
   box-shadow: 0 30px 50px #dbdbdb;
 }
+
 #bslide {
   display: flex;
   flex-wrap: wrap;
   width: max-content;
   margin-top: 50px;
 }
+
 .bitem {
   width: 17%;
-  height: 30%;
+  height: 290px;
   background-position: 50% 50%;
   display: inline-block;
   transition: 0.5s;
@@ -58,7 +60,7 @@
 }
 .bitem:nth-child(3) {
   right: 40%;
-  top: 65%;
+  top: 70%;
   min-width: 140px;
   max-width: 200px;
 }
@@ -70,7 +72,7 @@
 }
 .bitem:nth-child(5) {
   right: 20%;
-  top: 55%;
+  top: 50%;
   min-width: 140px;
   max-width: 200px;
 }
@@ -83,7 +85,7 @@
 
 .bitem .bcontent {
   position: absolute;
-  top: 25%;
+  top: 18%;
   left: 15%;
   width: 300px;
   text-align: left;
@@ -101,7 +103,7 @@
 }
 
 .bitem:nth-child(2) .bcontent {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 30px;
   display: block;
@@ -144,27 +146,36 @@
 }
 .bbuttons {
   position: absolute;
-  bottom: 10%;
+  bottom: 4%;
   z-index: 222222;
   text-align: center;
   width: 100%;
   right: -20%;
 }
+
+@media screen and (min-width: 768px) {
+  .bbuttons {
+    bottom: 10%;
+  }
+}
+
 .bbuttons button {
   cursor: pointer;
   width: 50px;
   height: 50px;
+  margin: 8px;
   border-radius: 50%;
-  border: 1px solid #555;
   transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
 }
+
 .bbuttons button:hover {
-  background-color: #bac383;
+  transform: scale(1.1);
 }
 
 .bnext-icon,
 .bprev-icon {
-  fill: rgba(0, 0, 0, 0.5);
+  fill: wheat;
 }
 
 .bholder {
@@ -174,11 +185,49 @@
 .bcard-text {
   position: absolute;
   font-family: Marmelad, sans-serif;
-  top: 220px;
+  bottom: -287px;
   left: 10px;
   color: wheat;
-  font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 12px;
   border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .bitem .bcontent {
+    font-size: 20px;
+  }
+}
+
+.bToCalendar {
+  background-color: var(--main-2);
+  font-family: Dosis, sans-serif;
+  font-weight: 600;
+  border: none;
+  color: wheat;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.bToCalendar:hover {
+  background-color: var(--main-1);
+  box-shadow: 0 2px 5px rgb(201, 197, 190);
+}
+
+.bBtnWrap {
+  display: inline-block;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  padding: 3px;
+}
+
+.bdes {
+  font-weight: 600;
 }

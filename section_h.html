@@ -18,9 +18,16 @@
 
     <!--Main CSS-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/section_h.css" />
+    <!-- EmailJS -->
 
-    <!-- Section F CSS -->
-    <link rel="stylesheet" href="assets/css/style_f.css" />
+    <!-- MailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("zTLiX8hsWc1NuiPs_");
+      })();
+    </script>
 
     <title>Christmas Advent</title>
   </head>
@@ -150,58 +157,76 @@
           <h1>Section E</h1>
         </div>
       </section>
+      <!-- Hero Section "SECTION F" by Frank Arellano -->
+      <section id="faq-section">
+        <div>
+          <h1>Section F</h1>
+        </div>
+      </section>
 
-      <!-- FAQ Section "SECTION F" by Frank Arellano -->
-      <div class="container my-5" id="faq-section">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <!-- FAQ Card -->
-            <div class="card">
-              <!-- Header -->
-              <div class="card-header text-center h4">FAQ</div>
-
-              <!-- Body -->
-              <div class="card-body px-5 py-3">
-                <!-- Intro -->
-                <div class="mt-3">
-                  <p class="mb-0 text-justify">
-                    Hello dear visitor, welcome to your recipe FAQ section. Traditional Christmas recipes vary around
-                    the world, but popular dishes include Roast Turkey, Mince Pies, Christmas Pudding, Gingerbread
-                    Houses, and Eggnog.
-                  </p>
+      <!-- Calendar Section -->
+      <!-- Calendar Integration -->
+      <section id="contact-section">
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h2 class="text-center">Christmas Calendar</h2>
+              <!-- Calendar Cells -->
+              <div class="hCalendar" id="hCalendar"></div>
+            </div>
+          </div>
+          <!-- Calendar Modal Trigger -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="recipeTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <!-- Title -->
+                  <h2 class="hTitleRecipe modal-title d-inline-block" id="recipeTitle"></h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                  <!-- Image Container -->
+                  <div class="modal-image-container position-relative text-center mb-3 mt-1">
+                    <!-- Image -->
+                    <img class="hImageRecipe" alt="Thumbnail" width="100%" height="auto" />
 
-                <!-- 'See All' Button -->
-                <div class="mt-3">
-                  <p class="text-center">
-                    <button
-                      id="faqButton"
-                      class="btn btn-primary"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target=".multi-collapse"
-                      aria-expanded="false"
-                      aria-controls="multiCollapseExample1 multiCollapseExample2"
-                    ></button>
-                  </p>
+                    <!-- Meta Data -->
+                    <div class="metaData position-absolute">
+                      <span class="recipe-metadata hCountryRecipe px-3 py-1"></span>
+                    </div>
+                  </div>
+
+                  <!-- Ingredients -->
+                  <div class="hIngredientsRecipe mb-3"></div>
+
+                  <!-- Instructions -->
+                  <div class="hInstructionsRecipe"></div>
                 </div>
-
-                <!-- Display FAQ from faq.json -->
-                <div id="faqJson">
-                  <div class="text-center h5 mb-3">Frequently Asked Questions</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Add to Favorites</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <!-- Contact Section "SECTION G" by Frank Arellano -->
 
       <!-- Footer Section -->
     </main>
-
     <!-- JS -->
-    <script defer src="assets/js/section_f.js"></script>
+
+    <script defer src="assets/js/section_h.js"></script>
     <!--Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
