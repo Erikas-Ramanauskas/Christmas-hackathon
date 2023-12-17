@@ -67,7 +67,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-image: linear-gradient(
+    to right,
+    #ae8625,
+    #f7ef8a,
+    #d2ac47,
+    #edc967
+  );
   border-radius: 35px;
   box-shadow: 3px 5px 1px #886719, inset 2px 2px 3px #f8f3a4;
   transform: rotate(5deg);
@@ -100,11 +106,13 @@ a {
 .btn-hero-container {
   width: 25% !important;
   height: 53px;
-  background-image: linear-gradient(to right,
-      #ae8625,
-      #f7ef8a,
-      #d2ac47,
-      #edc967);
+  background-image: linear-gradient(
+    to right,
+    #ae8625,
+    #f7ef8a,
+    #d2ac47,
+    #edc967
+  );
   border-radius: 5px;
   transform: rotate(-3deg);
   margin-left: 30%;
@@ -163,7 +171,6 @@ a {
 }
 
 @media screen and (max-width: 1600px) {
-
   .hero-text {
     font-size: 5rem;
     margin-left: -2%;
@@ -184,11 +191,9 @@ a {
   .btn-hero-container {
     margin-top: 6%;
   }
-
 }
 
 @media screen and (max-width: 1500px) {
-
   .hero-text {
     margin-left: 0;
   }
@@ -196,7 +201,6 @@ a {
   .container-hero-img {
     width: 42vw;
   }
-
 }
 
 @media screen and (max-width: 1400px) {
@@ -241,7 +245,6 @@ a {
   .btn-hero {
     margin-bottom: 57%;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -294,14 +297,13 @@ a {
     justify-content: center;
     text-align: center;
     font-size: 5rem;
-    text-shadow: 1px 1px 15px #fff,
-      1px 1px 20px #fff;
+    text-shadow: 1px 1px 15px #fff, 1px 1px 20px #fff;
     margin-left: 4%;
     margin-bottom: 300px;
   }
 
   .container-hero-img {
-    width: 100vw;
+    width: 10vw;
     position: absolute;
     justify-content: center;
     transform: rotate(0deg);
@@ -324,9 +326,7 @@ a {
 
   #section-a p {
     font-size: 1.1rem;
-    text-shadow: 1px 1px 10px #000,
-      1px 1px 20px #000,
-      1px 1px 15px #000;
+    text-shadow: 1px 1px 10px #000, 1px 1px 20px #000, 1px 1px 15px #000;
     margin-left: 5%;
     margin-bottom: -300px;
   }
@@ -372,7 +372,6 @@ a {
   }
 }
 
-
 @media screen and (max-width: 670px) {
   .cta-heading {
     font-size: 4.2rem;
@@ -394,7 +393,6 @@ a {
 }
 
 @media screen and (max-width: 548px) {
-
   .hero-text {
     margin-top: -270px;
   }
@@ -427,7 +425,6 @@ a {
   .timer {
     font-size: 27px;
   }
-
 }
 
 @media screen and (max-width: 362px) {
@@ -466,4 +463,5 @@ a {
   }
 }
 
-@media screen and (max-width: 322px) {}
+@media screen and (max-width: 322px) {
+}
