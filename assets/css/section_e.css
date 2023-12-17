@@ -4,16 +4,18 @@
   position: relative;
 }
 
+#team-section > div {
+  padding-top: 15vh;
+}
+
 #team-section > div > h1 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
   font-size: 4rem;
 }
 
-@media screen and (max-width: 768px) {
-  #team-section > div > h1 {
-    font-size: 3rem;
-  }
+.e-no-break {
+  white-space: nowrap;
 }
 
 #e-image-track {
@@ -75,4 +77,56 @@
 .e-member-name:hover,
 .e-member-name:focus {
   background-color: var(--main-2);
+}
+
+@media screen and (max-width: 1024px) {
+  #team-section > div > h1 {
+    font-size: 3rem;
+  }
+
+  #team-section > div {
+    padding-top: 20vh;
+  }
+
+  .e-member-name {
+    font-size: 1.2rem;
+    border-radius: 2px;
+  }
+
+  .e-member {
+    border-radius: 12px;
+  }
+
+  .e-image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #team-section > div > h1 {
+    font-size: 2rem;
+  }
+
+  #team-section > div {
+    padding-top: 25vh;
+  }
+
+  .e-member-name {
+    font-size: 1rem;
+    border-radius: 2px;
+  }
+
+  .e-member {
+    border-radius: 14px;
+  }
+
+  .e-image {
+    border-radius: 10px;
+    width: 60vmin;
+    height: 84vmin;
+  }
 }

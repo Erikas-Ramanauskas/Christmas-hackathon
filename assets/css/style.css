@@ -145,17 +145,24 @@ h6 {
 
 /* navigation bar */
 
+.nav-border {
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  border-radius: 5px;
+  padding: 4px;
+  margin-left: 4px;
+}
+
 .nav-link {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--main-1);
   color: white;
-  margin: 0.5rem;
+
   font-weight: 600;
-  border-radius: 1rem !important;
+  border-radius: 5px !important;
   padding: 0.4rem 0.6rem;
 }
 
 .nav-pills .nav-link.active {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--main-2);
 }
 
 .nav-pills .nav-link:hover {
