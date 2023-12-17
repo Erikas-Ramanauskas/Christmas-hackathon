@@ -1,92 +1,87 @@
 /* font link
  */
-@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&family=Marmelad&family=Poller+One&display=swap");
+/* Poppins & Dancing Script */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap");
+
+/* Dosis & Bitter */
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Dosis&display=swap");
+
+/* Abril Fatface, Oswald & Karla */
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla&family=Oswald&display=swap");
+
+/* Josefin Sans & Crimson Text  */
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans&display=swap");
 
 @font-face {
-    font-family: 'merry_christmas_flakeregular';
-    src: url('../font/merrychristmasflake-webfont.woff2') format('woff2'),
-         url('../font/merrychristmasflake-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'merry_christmas_starregular';
-    src: url('../font/merrychristmasstar-webfont.woff2') format('woff2'),
-         url('../font/merrychristmasstar-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "merry_christmas_flakeregular";
+  src: url("../font/merrychristmasflake-webfont.woff2") format("woff2"),
+    url("../font/merrychristmasflake-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Global variables. if used for as value do this: var(--variable-name) */
 :root {
   /* fonts */
-  --title-font: "merry_christmas_flakeregular", sans-serif;
-  --main-font: "Playfair Display", serif;
+  --special-font: "merry_christmas_flakeregular", sans-serif;
 
-  /* Colours */
-  --text: rgb(0, 0, 0);
-  --background: rgb(255, 255, 255);
-  --primary: rgb(255, 0, 0);
-  --secondary: rgb(0, 255, 0);
-  --accent: rgb(0, 0, 255);
+  --title-font: "Bitter", serif;
+  --main-font: "Dosis", sans-serif;
+
+  --text: #ffffff;
+  --main-1: #007536;
+  --main-2: #801105;
+  --secondary: #000000;
+  --shadow: 2px 2px 4px rgb(0, 0, 0);
 
   /* Utility */
   --small-boxshadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   --boxshadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  --border: 1px solid rgba(0, 0, 0, 0.2);
+  --border-width: 5px;
+  --border-style: solid;
+  --border-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  --border-image-slice: 1;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
-  font-family: var(--main font);
+  font-family: var(--main-font);
   font-weight: 200;
   letter-spacing: 2px;
-  /* color: whitesmoke !important; */
+  color: var(--text);
   height: 100%;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+
 }
 
-main{
+main {
   height: 100vh;
   width: 100vw;
   padding: 0;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
 }
 
-main  > section{
+main>section {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
+  background-color: var(--main-1);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-main  > section:nth-child(3n){
-  background-color: var(--accent);
-}
-
-main > section:nth-child(3n-1){
-  background-color: var(--primary);
-}
-
-main > section:nth-child(3n-2){
-  background-color: var(--secondary);
+main>section:nth-child(2n) {
+  background-color: var(--main-2);
 }
 
 section div h1 {
   font-size: 5rem;
-  color: #ffffff;
 }
 
 h1,
@@ -97,6 +92,8 @@ h5,
 h6 {
   font-family: var(--title-font);
   letter-spacing: 2px;
+  color: var(--text);
+  text-shadow: var(--shadow);
 }
 
 /* text color variable used for background color */
@@ -106,27 +103,27 @@ h6 {
 
 /* text color variable used for text color */
 .color-text-text {
-    color: var(--text);
+  color: var(--text);
 }
 
 /* background color variable used for background */
 .color-bg-bg {
-    background-color: var(--background);
+  background-color: var(--main-1);
 }
 
 /* background color variable used for text */
 .color-bg-text {
-  color: var(--background);
+  color: var(--main-1);
 }
 
 /* primary color variable used for background */
 .color-pr-bg {
-  background-color: var(--primary);
+  background-color: var(--main-2);
 }
 
 /* primary color variable used for text */
 .color-pr-text {
-  color: var(--primary);
+  color: var(--main-2);
 }
 
 /* secondary color variable used for background */
@@ -151,8 +148,7 @@ h6 {
 
 /* navigation bar */
 
-
-.nav-link{
+.nav-link {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   margin: 0.5rem;
@@ -161,17 +157,54 @@ h6 {
   padding: 0.4rem 0.6rem;
 }
 
-
-.nav-pills .nav-link.active{
+.nav-pills .nav-link.active {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.nav-pills .nav-link:hover{
+.nav-pills .nav-link:hover {
   text-decoration: underline;
   color: white;
 }
 
-.nav-pills .nav-link:focus{
+.nav-pills .nav-link:focus {
   text-decoration: none;
   color: white;
+}
+
+.snowflake {
+  width: 5px;
+  height: 5px;
+  filter: blur(1px);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #def7ff;
+  box-shadow: 0 0 5px 5px #b6edff;
+  animation: snowfall linear infinite;
+  transition: transform 0.5s linear;
+}
+
+/* contact form styles */
+
+.border-gradient {
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.border-gradient-btn {
+  border-image-source: var(--border-image);
+}
+
+#send_button:hover {
+  background-color: var(--main-2);
+}
+
+@keyframes snowfall {
+  from {
+    transform: translateY(-99vh) translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-1vh) scale(0.3);
+  }
 }

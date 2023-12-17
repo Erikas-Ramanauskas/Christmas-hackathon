@@ -1,0 +1,73 @@
+/* Style for calendar doors */
+.hCalendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.door {
+  width: auto;
+  height: auto;
+  /* background-color: #f0f0f0; */
+  color: var(--main-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+  background-image: linear-gradient(to right,
+      #ae8625,
+      #f7ef8a,
+      #d2ac47,
+      #edc967);
+  ;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Calendar Model Styling */
+
+.modal-content {
+  background-color: var(--main-2);
+}
+
+.recipe-metadata {
+  margin: 0 auto;
+  background-color: var(--main-1);
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.modal-image-container {
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to right,
+      #ae8625,
+      #f7ef8a,
+      #d2ac47,
+      #edc967);
+  ;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.hImageRecipe {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.metaData {
+  right: 15px;
+  bottom: 15px;
+}
+
+.recipe-subtitle {
+  background: -webkit-linear-gradient(left, #d4a35f, #f7ef8a, #d4a35f, #edc967);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #f7ef8acc;
+  background-clip: text;
+  color: transparent;
+}
