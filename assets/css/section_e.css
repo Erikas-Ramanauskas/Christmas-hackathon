@@ -2,16 +2,18 @@
   margin: 0rem;
   overflow: hidden;
   position: relative;
-
-  /* background-image: url(../images/section_e_background.webp);
-  background-size: cover; */
 }
 
-#section-e > h1 {
-  position: absolute;
-  top: 12vmin;
+#section-e > div > h1 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  #section-e > div > h1 {
+    font-size: 3rem;
+  }
 }
 
 #e-image-track {
@@ -30,24 +32,20 @@
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
+  border-radius: 7px;
 }
 
 .e-member {
   position: relative;
+  padding: 0.5%;
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  border-radius: 15px;
 }
 
 .e-member-name {
-  position: absolute;
   text-decoration: none;
   font-size: 1.5rem;
-  bottom: 0;
+  bottom: 10px;
   right: 1rem;
-  color: white;
   text-shadow: 2px 2px 4px #000000;
-  font-family: sans-serif;
-}
-
-.e-member-name:hover,
-.e-member-name:focus {
-  text-decoration: underline;
 }
