@@ -53,10 +53,14 @@ function eCreateTeamMemberElement(teamMember) {
   eTeamMemberName.classList.add("e-member-name");
   eTeamMemberName.innerHTML = teamMember.name;
 
+  const eTeamMemberNameContainer = document.createElement("div");
+  eTeamMemberNameContainer.classList.add("e-hero-name-container");
+  eTeamMemberNameContainer.appendChild(eTeamMemberName);
+
   const eTeamMemberElement = document.createElement("div");
   eTeamMemberElement.classList.add("e-member");
   eTeamMemberElement.appendChild(eTeamMemberImg);
-  eTeamMemberElement.appendChild(eTeamMemberName);
+  eTeamMemberElement.appendChild(eTeamMemberNameContainer);
   return eTeamMemberElement;
 }
 
@@ -82,16 +86,20 @@ const ehandleOnUp = () => {
   etrack.dataset.prevPercentage = etrack.dataset.percentage;
 };
 
+const eHanfleLeave = () => {
+  etrack.dataset.mouseDownAt = "0";
+};
+
 const ehandleOnMove = (e) => {
   if (etrack.dataset.mouseDownAt === "0") return;
 
   const mouseDelta = parseFloat(etrack.dataset.mouseDownAt) - e.clientX,
     maxDelta = window.innerWidth / 2;
-  console.log(mouseDelta, maxDelta);
 
-  const percentage = (mouseDelta / maxDelta) * -100,
-    nextPercentageUnconstrained = parseFloat(etrack.dataset.prevPercentage) + percentage,
-    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+  const percentage = (mouseDelta / maxDelta) * -100;
+
+  const nextPercentageUnconstrained = parseFloat(etrack.dataset.prevPercentage) + percentage;
+  const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
   etrack.dataset.percentage = nextPercentage;
 
@@ -124,7 +132,7 @@ eSection.ontouchstart = (e) => ehandleOnDown(e.touches[0]);
 
 eSection.onmouseup = (e) => ehandleOnUp(e);
 
-eSection.onmouseleave = (e) => ehandleOnUp(e);
+eSection.onmouseleave = (e) => eHanfleLeave(e);
 
 eSection.ontouchend = (e) => ehandleOnUp(e.touches[0]);
 

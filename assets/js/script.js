@@ -21,6 +21,13 @@ function snowflakeCreation() {
   const direction = ((Math.random() * 1001 - 500) * window.innerWidth) / 1000;
   snowflake.animate({ transform: `translateX(${direction}px)` }, { duration: animationDuration * 1000, iterations: 1 });
 
+  snowfall.appendChild(snowflake);
+
+  const intervalId = setInterval(() => {
+    if (snowflake === null) return;
+    checkBoundaryCollision(snowflake);
+  }, 200);
+
   function checkBoundaryCollision(snowflake) {
     const rect = snowflake.getBoundingClientRect();
     const screenWidth = window.innerWidth;
@@ -30,15 +37,9 @@ function snowflakeCreation() {
     if (rect.left <= 1 || rect.right >= screenWidth - 1 || rect.bottom >= screenHeight - 1) {
       // delete snowflake
       snowflake.remove();
+      clearInterval(intervalId);
     }
   }
-
-  snowfall.appendChild(snowflake);
-
-  setInterval(() => {
-    if (snowflake === null) return;
-    checkBoundaryCollision(snowflake);
-  }, 200);
 
   setTimeout(() => {
     snowflake.remove();
