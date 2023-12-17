@@ -292,7 +292,7 @@ a {
   }
 
   .container-hero-img {
-    width: 10vw;
+    width: 0;
     position: absolute;
     justify-content: center;
     transform: rotate(0deg);
@@ -382,6 +382,10 @@ a {
 }
 
 @media screen and (max-width: 548px) {
+  .logo {
+    margin-left: 0px;
+  }
+
   .hero-text {
     margin-top: -270px;
   }
@@ -415,8 +419,12 @@ a {
     margin-bottom: -200px;
   }
 
-  .timer {
-    font-size: 27px;
+  .time {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 15px;
   }
 }
 
@@ -447,14 +455,6 @@ a {
     margin-left: 2rem;
   }
 
-  .time {
-    font-size: 25px;
-  }
-
-  .text {
-    font-size: 15px;
-  }
 }
 
-@media screen and (max-width: 322px) {
-}
+@media screen and (max-width: 322px) {}
