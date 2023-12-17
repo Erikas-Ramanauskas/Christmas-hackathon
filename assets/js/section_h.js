@@ -52,22 +52,21 @@ async function hDisplayModal(recipeId) {
     const contentImage = data[recipeId].image_url || 'No content available for this door';
     const contentIngredients = data[recipeId].ingredients || 'No content available for this door';
     const contentInstructions = data[recipeId].instructions || 'No content available for this door';
-    const contentId = data[recipeId].id || 'No content available for this door';
     const contentCountry = data[recipeId].country || 'No content available for this door';
 
     // Display Data
-    hTitleRecipe.innerHTML = `#${recipeId} ${contentTitle}`;
+    hTitleRecipe.innerHTML = `${contentTitle}`;
     hImageRecipe.setAttribute('src', `${contentImage}`);
     hCountryRecipe.innerHTML = `${contentCountry}`;
 
-    let ingredientsHtml = '<h4 class="my-0">Ingredients</h4><ul>';
+    let ingredientsHtml = '<h4>Ingredients</h4><ul>';
     contentIngredients.forEach((ingredient) => {
         ingredientsHtml += `<li>${ingredient}</li>`;
     });
     ingredientsHtml += '</ul>';
     hIngredientsRecipe.innerHTML = ingredientsHtml;
 
-    let instructionsHtml = '<h4 class="my-0 text-justify">Instructions</h4>';
+    let instructionsHtml = '<h4 class="text-justify">Instructions</h4>';
     contentInstructions.forEach((ingredient) => {
         instructionsHtml += `<p>${ingredient}</p>`;
     });

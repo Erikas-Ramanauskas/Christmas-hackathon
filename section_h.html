@@ -172,19 +172,22 @@
                         <div class="modal-content">
                             <div class="modal-header text-center">
                                 <!-- Title -->
-                                <h1 class="hTitleRecipe modal-title" id="recipeTitle"></h1>
+                                <h2 class="hTitleRecipe modal-title d-inline-block" id="recipeTitle"></h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <!-- Meta Data -->
-                                <div class="metaData text-center">
-                                    <span class="recipe-metadata hCountryRecipe px-3 py-1"></span>
+                                <!-- Image Container -->
+                                <div class="modal-image-container position-relative text-center mb-3 mt-1">
+                                    <!-- Image -->
+                                    <img class="hImageRecipe" alt="Thumbnail" width="100%" height="auto">
+
+                                    <!-- Meta Data -->
+                                    <div class="metaData position-absolute">
+                                        <span class="recipe-metadata hCountryRecipe px-3 py-1"></span>
+                                    </div>
                                 </div>
-                                <!-- Image -->
-                                <div class="modal-image text-center">
-                                    <img class="hImageRecipe my-3" alt=" Thumbnail" width="100%" height="100%">
-                                </div>
+
 
                                 <!-- Ingredients -->
                                 <div class="hIngredientsRecipe mb-3">

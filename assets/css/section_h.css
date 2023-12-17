@@ -23,24 +23,26 @@
   background-color: var(--main-2);
 }
 
-.metadata {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  overflow: hidden;
-}
-
 .recipe-metadata {
   margin: 0 auto;
   background-color: var(--main-1);
   border-radius: 15px;
-  /* padding: 5px; */
-  margin-top: 5px;
   display: inline-block;
 }
 
-/*  */
+.modal-image-container {
+  width: 100%;
+  overflow: hidden;
+}
 
 .hImageRecipe {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
+}
+
+.metaData {
+  right: 15px;
+  bottom: 15px;
 }
