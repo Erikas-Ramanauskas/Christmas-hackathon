@@ -154,52 +154,57 @@
 
         <!-- Calendar Section -->
         <!-- Calendar Integration -->
-        <div class="container my-5">
-            <section class="row d-flex justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <h2 class="text-center">Christmas Calendar</h2>
-                    <!-- Calendar Cells -->
-                    <div class="hCalendar" id="hCalendar">
+        <section id="section-g">
+            <div class="container my-5">
+                <section class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h2 class="text-center">Christmas Calendar</h2>
+                        <!-- Calendar Cells -->
+                        <div class="hCalendar" id="hCalendar">
+                        </div>
+
                     </div>
-
-                </div>
-            </section>
-            <!-- Calendar Modal Trigger -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="recipeTitle" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- Title -->
-                            <h1 class="hTitleRecipe modal-title fs-5" id="recipeTitle">Placeholder TITLE</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Meta Data -->
-                            <div class="metaData text-center">
-                                <span class="hDayRecipe"></span>
-                                <span class="hCountryRecipe"></span>
-                                <span class="hTypeRecipe"></span>
-                                <span class="hVeganRecipe"></span>
+                </section>
+                <!-- Calendar Modal Trigger -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="recipeTitle" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <!-- Title -->
+                                <h1 class="hTitleRecipe modal-title" id="recipeTitle"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <!-- Image -->
-                            <div class="modal-image text-center">
-                                <img class="hImageRecipe my-3" alt=" Thumbnail" width="250px" height="auto">
-                            </div>
+                            <div class="modal-body">
+                                <!-- Meta Data -->
+                                <div class="metaData text-center">
+                                    <span class="recipe-metadata hCountryRecipe px-3 py-1"></span>
+                                </div>
+                                <!-- Image -->
+                                <div class="modal-image text-center">
+                                    <img class="hImageRecipe my-3" alt=" Thumbnail" width="100%" height="100%">
+                                </div>
 
-                            <!-- Ingredients -->
-                            <div class="hIngredientsRecipe">
+                                <!-- Ingredients -->
+                                <div class="hIngredientsRecipe mb-3">
 
+                                </div>
+
+                                <!-- Instructions -->
+                                <div class="hInstructionsRecipe">
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Add to Favorites</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Add to Favorites</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Contact Section "SECTION G" by Frank Arellano -->
 

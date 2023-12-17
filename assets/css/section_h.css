@@ -16,3 +16,31 @@
   align-items: center;
   cursor: pointer;
 }
+
+/* Calendar Model Styling */
+
+.modal-content {
+  background-color: var(--main-2);
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  overflow: hidden;
+}
+
+.recipe-metadata {
+  margin: 0 auto;
+  background-color: var(--main-1);
+  border-radius: 15px;
+  /* padding: 5px; */
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/*  */
+
+.hImageRecipe {
+  border-radius: 15px;
+}

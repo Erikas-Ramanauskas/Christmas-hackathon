@@ -7,11 +7,9 @@ const hCalendar = document.querySelector('#hCalendar');
 
 const hTitleRecipe = document.querySelector('.hTitleRecipe');
 const hIngredientsRecipe = document.querySelector('.hIngredientsRecipe');
+const hInstructionsRecipe = document.querySelector('.hInstructionsRecipe');
 const hImageRecipe = document.querySelector('.hImageRecipe');
-const hDayRecipe = document.querySelector('.hDayRecipe');
 const hCountryRecipe = document.querySelector('.hCountryRecipe');
-const hTypeRecipe = document.querySelector('.hTypeRecipe');
-const hVeganRecipe = document.querySelector('.hVeganRecipe');
 
 // Calendar Doors
 
@@ -51,33 +49,35 @@ async function hDisplayModal(recipeId) {
 
     // Prepare Data
     const contentTitle = data[recipeId].name || 'No content available for this door';
-    const contentImage = data[recipeId].image_name || 'No content available for this door';
-    const contentIngredients = data[recipeId].instructions || 'No content available for this door';
-    const contentDay = data[recipeId].day || 'No content available for this door';
+    const contentImage = data[recipeId].image_url || 'No content available for this door';
+    const contentIngredients = data[recipeId].ingredients || 'No content available for this door';
+    const contentInstructions = data[recipeId].instructions || 'No content available for this door';
+    const contentId = data[recipeId].id || 'No content available for this door';
     const contentCountry = data[recipeId].country || 'No content available for this door';
-    const contentType = data[recipeId].type || 'No content available for this door';
-    let contentVegan = data[recipeId].vegan || 'No content available for this door';
-
-    if (contentVegan == false) {
-        contentVegan = 'No';
-    } else {
-        contentVegan = 'Yes';
-    }
 
     // Display Data
     hTitleRecipe.innerHTML = `#${recipeId} ${contentTitle}`;
     hImageRecipe.setAttribute('src', `${contentImage}`);
-    hDayRecipe.innerHTML = `<strong>Day</strong>: ${contentDay} | `;
-    hCountryRecipe.innerHTML = `<strong>Country</strong>: ${contentCountry}  | `;
-    hTypeRecipe.innerHTML = `<strong>Type</strong>: ${contentType}  | `;
-    hVeganRecipe.innerHTML = `<strong>Vegan</strong>: ${contentVegan}  | `;
-    hIngredientsRecipe.innerHTML = `<strong>Ingredients</strong><br>${contentIngredients}`;
+    hCountryRecipe.innerHTML = `${contentCountry}`;
+
+    let ingredientsHtml = '<h4 class="my-0">Ingredients</h4><ul>';
+    contentIngredients.forEach((ingredient) => {
+        ingredientsHtml += `<li>${ingredient}</li>`;
+    });
+    ingredientsHtml += '</ul>';
+    hIngredientsRecipe.innerHTML = ingredientsHtml;
+
+    let instructionsHtml = '<h4 class="my-0 text-justify">Instructions</h4>';
+    contentInstructions.forEach((ingredient) => {
+        instructionsHtml += `<p>${ingredient}</p>`;
+    });
+    hInstructionsRecipe.innerHTML = instructionsHtml;
 }
 
 // Fetch JSON data
 async function hFetchCalendarData() {
     try {
-        const response = await fetch('assets/data/section_h.json');
+        const response = await fetch('assets/data/recipies_food.json');
         const data = await response.json();
         return data;
     } catch (error) {
