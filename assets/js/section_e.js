@@ -74,7 +74,6 @@ ePopulateTeamMembers();
 let scrollPosition;
 
 function ehandleOnDown(e) {
-  e.preventDefault();
   etrack.dataset.mouseDownAt = e.clientX;
 }
 
@@ -88,6 +87,7 @@ const ehandleOnMove = (e) => {
 
   const mouseDelta = parseFloat(etrack.dataset.mouseDownAt) - e.clientX,
     maxDelta = window.innerWidth / 2;
+  console.log(mouseDelta, maxDelta);
 
   const percentage = (mouseDelta / maxDelta) * -100,
     nextPercentageUnconstrained = parseFloat(etrack.dataset.prevPercentage) + percentage,

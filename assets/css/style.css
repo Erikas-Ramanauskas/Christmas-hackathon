@@ -48,6 +48,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -57,24 +58,19 @@ body {
   color: var(--text);
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
   padding: 0;
   margin: 0;
+
 }
 
 main {
   height: 100vh;
   width: 100vw;
   padding: 0;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
 }
 
 main > section {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--main-1);
   scroll-snap-align: start;
   scroll-snap-stop: always;

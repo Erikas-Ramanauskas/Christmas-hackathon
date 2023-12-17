@@ -59,5 +59,4 @@ function snowflakesInterval() {
   const interval = (Math.random() * 10000) / snowflakesPerSecond;
 
   setInterval(snowflakeCreation, interval);
-  console.log(interval);
 }
