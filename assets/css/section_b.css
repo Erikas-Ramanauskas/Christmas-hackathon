@@ -155,10 +155,8 @@
 
 @media screen and (min-width: 768px) {
   .bbuttons {
-      bottom: 10%;
-   
+    bottom: 10%;
   }
-
 }
 
 .bbuttons button {
@@ -198,12 +196,12 @@
 
 @media screen and (min-width: 768px) {
   .bitem .bcontent {
-     font-size: 20px;
+    font-size: 20px;
   }
 }
 
 .bToCalendar {
-  background-color: var(--main-1);
+  background-color: var(--main-2);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -214,10 +212,17 @@
   margin: 4px 2px;
   transition: 0.3s;
   cursor: pointer;
-  border-radius: 8px; 
+  border-radius: 10px;
 }
 
 .bToCalendar:hover {
-  background-color: var(--main-2); 
-  box-shadow: var(--shadow); 
+  background-color: var(--main-1);
+  box-shadow: 0 2px 5px rgb(201, 197, 190);
+}
+
+.bBtnWrap {
+  display: inline-block;
+  border-radius: 8px;
+  background: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  padding: 2px;
 }
