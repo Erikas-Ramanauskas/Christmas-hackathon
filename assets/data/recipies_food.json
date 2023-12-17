@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Roasted goose",
-    "Instructions": [
+    "instructions": [
       "Preheat your oven to 350°F (175°C). Remove the giblets and excess fat from the cavity of the goose. Save the giblets for making stock or gravy. Prick the skin of the goose all over with a fork (without piercing the meat) to help release the fat during cooking. This will result in a crispier skin.",
       "Pat the goose dry with paper towels and then season generously inside and out with salt and pepper. Stuff the cavity with the quartered onion, oranges, crushed garlic, and fresh herbs.",
       "Truss the goose if desired, to help it cook evenly. This involves tying the legs together with kitchen twine and tucking the wings underneath the bird.",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "name": "Roasted turkey",
-    "Instructions": [
+    "instructions": [
       "Thaw the turkey completely if it's frozen. Remove giblets and neck from the cavity. Preheat your oven to 325°F (165°C). Pat the turkey dry with paper towels.",
       "Season the cavity generously with salt and pepper. Add aromatics like quartered onion, halved lemon, garlic cloves, and herbs. Gently separate the skin from the breast meat using your fingers. Rub softened butter or olive oil underneath the skin and all over the turkey. Season the skin with salt, pepper, and herbs.",
       "Place the turkey breast side up on a roasting rack in a roasting pan. Cover the breast loosely with foil to prevent it from over-browning. Remove the foil during the last hour of cooking. Roast the turkey in the preheated oven. The cooking time will depend on the size of the turkey. As a general guide, calculate about 15 minutes per pound (500 grams). Baste the turkey every 30-45 minutes with the juices or melted butter.",
@@ -48,7 +48,7 @@
   {
     "id": 3,
     "name": "Arista di Maiale al Forno (Roast Pork Loin)",
-    "Instructions": [
+    "instructions": [
       "Preheat the oven. Rub the pork loin with minced garlic, chopped rosemary, salt, and pepper.",
       "Drizzle with olive oil. Roast in the oven until the internal temperature reaches 145°F (63°C), periodically basting with white wine. Let it rest before slicing."
     ],
@@ -59,7 +59,7 @@
   {
     "id": 4,
     "name": "Carp",
-    "Instructions": [
+    "instructions": [
       "Preheat your oven to 375°F (190°C).",
       "Rinse the carp fillets and pat them dry with paper towels. Place them in a baking dish lined with foil or lightly greased.",
       "Drizzle the olive oil over the fish. Sprinkle minced garlic, salt, and pepper evenly on both sides of the fillets. You can also add other herbs like thyme or rosemary for additional flavor.",
@@ -81,7 +81,7 @@
   {
     "id": 5,
     "name": "Roast Duck",
-    "Instructions": [
+    "instructions": [
       "Preheat your oven to 350°F (175°C). Remove the giblets from the duck's cavity and pat the duck dry with paper towels. Score the duck's skin in a crisscross pattern (be careful not to cut into the meat) to help the fat render during roasting. Season the duck generously with salt and pepper, both inside and outside.",
       "If desired, stuff the cavity of the duck with quartered oranges or lemon slices and fresh herbs like thyme, rosemary, or sage. This adds flavor and aroma to the duck.",
       "Place the duck on a rack in a roasting pan, breast side up. If you have a roasting thermometer, insert it into the thickest part of the duck's thigh, making sure it doesn't touch bone.",
@@ -95,7 +95,7 @@
   {
     "id": 6,
     "name": "Suckling Pig",
-    "Instructions": [
+    "instructions": [
       "Ensure the pig is thoroughly cleaned and patted dry with paper towels. Remove any excess hair using a kitchen torch or by carefully shaving it off. Rinse the pig inside and out with cold water. Using a sharp knife, score the skin of the pig in a crosshatch pattern, making sure not to cut too deeply into the meat.",
       "Rub the pig generously with salt and freshly ground black pepper, both inside the cavity and all over the outside skin. You can also drizzle some olive oil or melted butter to help crisp the skin during roasting. Use kitchen twine to tie the legs and secure the pig's shape. This helps the pig cook evenly and holds it together during roasting.",
       "Preheat your oven to a high temperature, around 450°F (230°C).",
@@ -109,7 +109,7 @@
   {
     "id": 7,
     "name": "Glazed Ham",
-    "Instructions": [
+    "instructions": [
       "Preheat your oven to 325°F (165°C).",
       "Prepare the ham by scoring the surface lightly in a diamond pattern with a sharp knife. If desired, insert whole cloves into the scored intersections for added flavor and decoration. Place the ham on a roasting pan lined with foil or parchment paper, cut side down.",
       "In a bowl, mix together the brown sugar, honey or maple syrup, Dijon mustard, apple cider vinegar, ground cloves, cinnamon, and nutmeg to create the glaze.",
@@ -133,7 +133,7 @@
   {
     "id": 8,
     "name": "Capon",
-    "Instructions": [
+    "instructions": [
       "Preheat your oven to 350°F (175°C). Rinse the capon thoroughly under cold water and pat it dry with paper towels. Remove any giblets or innards from the cavity if they are included. Rub the inside of the capón with the cut sides of the lemon. Season the inside cavity generously with salt, pepper, and your choice of herbs.",
       "In a small bowl, mix the softened butter with minced garlic. Season the outside of the capón with salt and pepper, and then rub the butter and garlic mixture all over the bird, ensuring even coverage. Place the quartered onion, carrots, and celery in the bottom of a roasting pan to create a bed for the capón. This will help elevate the bird and add flavor to the drippings.",
       "Truss the capón if desired, then place it breast side up on top of the vegetables in the roasting pan. Pour the chicken broth or white wine into the bottom of the roasting pan to provide moisture during cooking. This will also be used for basting.",
@@ -158,7 +158,7 @@
   {
     "id": 9,
     "name": "Fish",
-    "Instructions": [
+    "instructions": [
       "Rinse the salmon fillet under cold water and pat it dry with paper towels. In a bowl, mix together the sea salt, sugar, crushed black peppercorns, chopped fresh dill.",
       "Lay out a piece of plastic wrap longer than the salmon fillet. Spread half of the salt-sugar mixture evenly over the plastic wrap. Place the salmon fillet, skin-side down, on top of the salt-sugar mixture.",
       "Spread the remaining salt-sugar mixture evenly over the top of the salmon fillet, ensuring it's completely covered. Wrap the salmon tightly in the plastic wrap, then place it in a shallow dish or on a tray. Place a weight on top of the wrapped salmon (such as a plate with some cans on top) to press it down.",
@@ -177,7 +177,7 @@
   {
     "id": 10,
     "name": "Oysters",
-    "Instructions": [
+    "instructions": [
       "Rinse the oysters under cold running water to remove any dirt or debris. Use a stiff brush to scrub the shells if needed. Place the oysters on a tray or platter, making sure they sit level and won't spill the juices.",
       "With a clean oyster knife, carefully shuck each oyster by inserting the knife into the hinge of the shell. Twist the knife to pop the shell open, then slide it along the inside to cut the muscle attaching the oyster to the shell. Remove the top shell and loosen the oyster from the bottom shell, keeping it in its juices."
     ],
@@ -188,7 +188,7 @@
   {
     "id": 11,
     "name": "Rabanadas",
-    "Instructions": [
+    "instructions": [
       "Cut the day-old bread into thick slices, about 3/4 to 1 inch thick. Set them aside.",
       "In a saucepan, combine the milk, lemon zest, orange zest, and cinnamon stick (or ground cinnamon). Heat the mixture over low heat, stirring occasionally, until it's warm but not boiling. Remove from heat and let it cool slightly.",
       "In a shallow dish or bowl, whisk the eggs together. Dip each slice of bread into the warm milk mixture, allowing it to soak for a few seconds on each side. Ensure the bread is soaked but not overly saturated.",
@@ -212,7 +212,7 @@
   {
     "id": 12,
     "name": "Garides Saganaki",
-    "Instructions": [
+    "instructions": [
       "Preheat the oven to 375°F (190°C).",
       "Heat olive oil in an oven-safe skillet over medium heat. Add the chopped onion and sauté until translucent. Add the minced garlic and cook for another minute until fragrant. Stir in the diced tomatoes, tomato sauce, dried oregano, paprika, salt, and pepper. Simmer the sauce for about 10-15 minutes until it thickens slightly. Add the cleaned shrimp to the skillet and cook for about 3-4 minutes until they turn pink and opaque. Stir occasionally to coat the shrimp in the sauce.",
       "Sprinkle the crumbled feta cheese over the shrimp and sauce in the skillet. Transfer the skillet to the preheated oven and bake for approximately 10-12 minutes or until the feta cheese melts and starts to turn golden.",
@@ -237,7 +237,7 @@
   {
     "id": 13,
     "name": "Wild Game",
-    "Instructions": [
+    "instructions": [
       "Pat the venison steaks dry with paper towels. Season both sides generously with salt and black pepper.",
       "Heat a heavy-bottomed skillet or cast-iron pan over medium-high heat. Add the olive oil or clarified butter and let it heat until shimmering but not smoking.",
       "Carefully place the venison steaks in the hot pan. Let them sear without moving for about 2-3 minutes to develop a nice crust. Flip the steaks and sear for an additional 2-3 minutes for medium-rare doneness (adjust timing based on preferred doneness).",
@@ -257,7 +257,7 @@
   {
     "id": 14,
     "name": "Cepelinai ",
-    "Instructions": [
+    "instructions": [
       "Mix the grated potatoes with the squeezed raw grated potatoes. Add salt, flour, and egg. Mix well until you get a consistent dough.",
       "In a bowl, combine the ground meat with finely chopped onions. Add salt and pepper to taste, mix well.",
       "Take a handful of the potato dough and flatten it in your palm to form a small disc. Place a spoonful of the meat filling in the center of the disc. Fold the potato dough over the filling, shaping it into an elongated shape resembling a zeppelin or dumpling. Make sure the filling is completely covered and seal the edges well.",
@@ -283,7 +283,7 @@
   {
     "id": 15,
     "name": "Certainly",
-    "Instructions": [
+    "instructions": [
       "In a large mixing bowl, combine the ground meat with finely chopped onion, minced garlic, sweet paprika, salt, black pepper, and baking soda. Mix the ingredients thoroughly until well combined. You can use your hands, but avoid overworking the mixture to prevent toughness in the Ćevapi.",
       "Take a small amount of the meat mixture and shape it into sausage-like cylinders, about 3-4 inches long and 1 inch in diameter. Wetting your hands with a little water or oil can help prevent sticking while shaping.",
       "Preheat your grill or barbecue to medium-high heat. If the mixture feels too soft or doesn’t hold its shape well, refrigerate it for 30 minutes before shaping the Ćevapi again. Lightly oil the grill grates or brush the Ćevapi with oil to prevent sticking. Grill the Ćevapi for about 5-7 minutes, turning occasionally, until they are cooked through and have a nice char on the outside.",
@@ -305,7 +305,7 @@
   {
     "id": 16,
     "name": "Żurek",
-    "Instructions": [
+    "instructions": [
       "If using a sourdough starter, mix it with a cup of lukewarm water and set it aside for about 6-8 hours or overnight to ferment. If you have żurek, use it directly.",
       "In a large pot, bring the water or meat broth to a boil. Add the sausage or ham slices, chopped onion, minced garlic, bay leaf, and allspice berries. Simmer for about 30 minutes to allow the flavors to meld.",
       "If using a sourdough starter, strain the mixture, discarding any solids, and add the liquid to the pot. If using żurek, add it directly to the pot.",
@@ -333,7 +333,7 @@
   {
     "id": 17,
     "name": "Ghiveci",
-    "Instructions": [
+    "instructions": [
       "Wash and dice the eggplants, tomatoes, bell peppers, carrots, potatoes, and green beans.",
       "In a large pot or Dutch oven, heat olive oil over medium heat. Add the chopped onions and sauté until translucent. Add the minced garlic and continue cooking for another minute until fragrant.",
       "Add the diced eggplants, tomatoes, bell peppers, carrots, potatoes, and green beans to the pot. Stir the vegetables together and cook for a few minutes until they begin to soften.",
@@ -361,7 +361,7 @@
   {
     "id": 18,
     "name": "Moules-Frites",
-    "Instructions": [
+    "instructions": [
       "Ensure all the mussels are cleaned and debearded. Discard any open or broken ones.",
       "In a large pot or Dutch oven, heat a drizzle of olive oil or a knob of butter over medium heat. Add the chopped shallots and minced garlic, sauté until softened but not browned.",
       "Increase the heat to high and add the cleaned mussels to the pot. Pour in the white wine, cover the pot, and let the mussels steam for about 5-7 minutes or until they open. Discard any mussels that remain closed.",
@@ -387,7 +387,7 @@
   {
     "id": 19,
     "name": "Hangikjöt",
-    "Instructions": [
+    "instructions": [
       "If the smoked lamb is not pre-sliced, thinly slice it. Remove any excess fat if desired.",
       "Peel the potatoes and cut them into chunks. Boil them in salted water until they're tender. Drain and set aside.",
       "If using fresh peas, blanch them in boiling water for a few minutes until they're tender but still crisp. If using frozen peas, cook them according to package instructions. Drain and set aside.",
@@ -402,7 +402,7 @@
   {
     "id": 20,
     "name": "Pastizz",
-    "Instructions": [
+    "instructions": [
       "In a mixing bowl, combine 4 cups of all-purpose flour and 1 teaspoon of salt. Cut in the chilled and diced 1 cup of butter until the mixture resembles breadcrumbs. Gradually add 1 cup of cold water while stirring until a dough forms. Knead the dough gently for a few minutes until smooth. Wrap the dough in plastic wrap and refrigerate for at least 30 minutes.",
       "For the ricotta filling, mix 2 cups of ricotta cheese with salt and pepper to taste in a bowl. Set it aside.",
       "For the pea filling, if using whole peas, cook and mash them. Mix with sautéed onions (if using), salt, and pepper. Set aside.",
@@ -428,7 +428,7 @@
   {
     "id": 21,
     "name": "Köttbullar",
-    "Instructions": [
+    "instructions": [
       "To make Köttbullar, combine ground beef, soaked breadcrumbs, chopped onion, and an egg; season with salt and pepper, shape into small meatballs, and cook in butter or oil until browned, then serve with lingonberry sauce and potatoes or mashed potatoes."
     ],
     "ingredients": [
@@ -446,7 +446,7 @@
   {
     "id": 22,
     "name": "Pinnekjøtt",
-    "Instructions": [
+    "instructions": [
       "Soak the dried and salted lamb or mutton ribs in water for 24-48 hours. Preheat the oven to 160°C. Peel and cut potatoes, rutabaga, and carrots.",
       "Steam the pinnekjøtt for 2-3 hours. Roast the vegetables in the oven until golden",
       "Serve pinnekjøtt with the roasted vegetables and melted butter. Enjoy by cutting the meat from the bone."
@@ -465,7 +465,7 @@
   {
     "id": 23,
     "name": "Borscht",
-    "Instructions": [
+    "instructions": [
       "To prepare Borscht, sauté onions until translucent, then add grated beets, carrots, and diced potatoes, cooking for about 5 minutes.",
       "Incorporate diced tomatoes, tomato paste, and broth.",
       "Add shredded cabbage, minced garlic, bay leaves, salt, and pepper. Bring to a boil, then simmer for 30-40 minutes until vegetables are tender.",
@@ -493,7 +493,7 @@
   {
     "id": 24,
     "name": "Pampúshka",
-    "Instructions": [
+    "instructions": [
       "For Pampúshka, start by activating yeast in warm milk. Mix with flour, sugar, eggs, and salt. Knead the dough, then incorporate softened butter.",
       "Let it rise until doubled. Shape into rounds, add your preferred filling, and let rise again.",
       "Bake until golden brown."
@@ -514,7 +514,7 @@
   {
     "id": 25,
     "name": "Kapustnica",
-    "Instructions": [
+    "instructions": [
       "Rinse the sauerkraut under cold water to reduce its sourness. Drain and set aside.",
       "In a large pot, sauté the diced smoked meat until it releases some fat. Add chopped onions and minced garlic. Cook until the onions are translucent.",
       "Add the cubed potatoes, diced carrot, celery root or stalk (if using), bay leaf, allspice berries, and paprika to the pot. Stir in the tomato paste and sauté for a couple of minutes.",
@@ -544,7 +544,7 @@
   {
     "id": 26,
     "name": "Scalloped potatoes",
-    "Instructions": [
+    "instructions": [
       "To prepare Swiss Scalloped Potatoes, slice potatoes thinly. In a saucepan, melt butter, add minced garlic, stir in flour, and gradually add milk.",
       "Season with salt, pepper, and nutmeg. Layer sliced potatoes and Swiss cheese in a baking dish, pouring the creamy sauce over each layer.",
       "Bake until potatoes are tender and the top is golden."
@@ -566,7 +566,7 @@
   {
     "id": 27,
     "name": "Pīrāgi",
-    "Instructions": [
+    "instructions": [
       "begin by preparing a yeast dough with flour, milk, butter, sugar, and salt.",
       "Let the dough rise. In the meantime, prepare a filling with bacon, onions, and your chosen ingredients.",
       "Roll out the dough, cut into rounds, add the filling, and shape into crescents.",
@@ -589,7 +589,7 @@
   {
     "id": 28,
     "name": "Blood sausage",
-    "Instructions": [
+    "instructions": [
       "Mix pork blood with cooked barley groats or rice.",
       "Add finely chopped onions, pork fat, and season with salt, pepper, marjoram, and allspice.",
       "Stuff the mixture into casings, tying them into sausage links.",
@@ -612,7 +612,7 @@
   {
     "id": 29,
     "name": "Garbuzok",
-    "Instructions": [
+    "instructions": [
       "peel the pumpkin, remove the seeds and cut into small cubes.",
       "Pour the cut pumpkin with water and whey, salt and put on medium heat for 20 minutes.",
       "Peel the onion, finely chop and fry in vegetable oil. In a separate bowl, grind the fat with cumin.",
@@ -637,7 +637,7 @@
   {
     "id": 30,
     "name": "Şiş Kebab",
-    "Instructions": [
+    "instructions": [
       "In a bowl, combine grated onion, olive oil, yogurt, minced garlic, paprika, cumin, black pepper, salt, and lemon juice. Mix well to create the marinade.",
       "Place the cubed meat in the marinade and coat it thoroughly. Cover the bowl with plastic wrap and let it marinate in the refrigerator for at least 2-4 hours, or preferably overnight, to enhance the flavors.",
       "Preheat your grill or barbecue to medium-high heat. Thread the marinated meat cubes onto skewers, evenly distributing them along the skewers. Leave a little space between each piece to ensure even cooking.",
@@ -663,7 +663,7 @@
   {
     "id": 31,
     "name": "Roast Pork",
-    "Instructions": [
+    "instructions": [
       "Preheat the oven, score the pork's skin, and rub it with a mixture of crushed garlic, olive oil, rosemary, thyme, black pepper, and sea salt",
       "Place the pork in a roasting pan, add white wine, and roast until the internal temperature is safe and the skin is crispy, basting with pan juices.",
       "In parallel, prepare potatoes by tossing them with olive oil, salt, and herbs, then roast until golden.",
