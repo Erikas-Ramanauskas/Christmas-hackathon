@@ -36,8 +36,11 @@ function createImgList(arr) {
               <div class="bcontent">
                 <div class="bname">${country}</div>
                 <div class="bdes">${name}</div>
+                <div class="bBtnWrap">
                  <a class="bToCalendar" data-id="${id}" href="#section-h">SEE MORE</a>
-              </div>
+                 </div>
+                 </div>
+
             </div>
       `
     )
@@ -45,6 +48,5 @@ function createImgList(arr) {
 }
 
 bFetchJson().then((data) => {
-  galleryContainer.insertAdjacentHTML("afterbegin", createImgList(data));
-  galleryContainer.innerHTML(createImgList(data));
+  galleryContainer.innerHTML = createImgList(data);
 });
