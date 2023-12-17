@@ -1,52 +1,52 @@
 [
-    {
-        "id": 1,
-        "question": "What are some traditional Christmas recipes?",
-        "answer": "Traditional Christmas recipes vary around the world, but popular dishes include Roast Turkey, Mince Pies, Christmas Pudding, Gingerbread Houses, and Eggnog."
-    },
-    {
-        "id": 2,
-        "question": "How can I make my Christmas meal vegetarian-friendly?",
-        "answer": "You can create vegetarian dishes like Stuffed Bell Peppers, Mushroom Wellington, Roasted Vegetable Medley, or a Nut Roast as the main course, along with various vegetarian sides and desserts."
-    },
-    {
-        "id": 3,
-        "question": "What are some quick and easy Christmas desserts?",
-        "answer": "Quick Christmas desserts include Chocolate Bark, Peppermint Mousse, Gingerbread Cookies, and Festive Rice Pudding. These can be made with minimal ingredients and preparation."
-    },
-    {
-        "id": 4,
-        "question": "How do I properly prepare a Christmas turkey?",
-        "answer": "Key steps include thawing the turkey thoroughly if frozen, removing giblets, seasoning or brining, and roasting until the internal temperature reaches 165°F (74°C). Always let it rest before carving."
-    },
-    {
-        "id": 5,
-        "question": "Can I prepare parts of my Christmas dinner in advance?",
-        "answer": "Absolutely! Dishes like casseroles, some desserts, and sauces can be made in advance. Prepping vegetables and setting the table a day before can also save time."
-    },
-    {
-        "id": 6,
-        "question": "What are some gluten-free Christmas recipes?",
-        "answer": "Gluten-free Christmas recipes include Flourless Chocolate Cake, Almond Flour Sugar Cookies, Gluten-Free Gravy, and Roasted Vegetable Quinoa Salad."
-    },
-    {
-        "id": 7,
-        "question": "How can I make my Christmas cooking more budget-friendly?",
-        "answer": "Opt for in-season vegetables, buy ingredients in bulk, and choose less expensive cuts of meat. Planning your menu around these items can lead to significant savings."
-    },
-    {
-        "id": 8,
-        "question": "What Christmas recipes are kid-friendly?",
-        "answer": "Kids often enjoy decorating Sugar Cookies, making Chocolate Reindeer Bark, preparing Mini Sausage Rolls, or creating their own Gingerbread House."
-    },
-    {
-        "id": 9,
-        "question": "How do I pair wine with my Christmas dinner?",
-        "answer": "A general guideline is to pair white wines like Chardonnay or Sauvignon Blanc with lighter meats and red wines like Merlot or Cabernet Sauvignon with red meats. Sparkling wines and sweet dessert wines are great with desserts."
-    },
-    {
-        "id": 10,
-        "question": "What are some unique Christmas recipes from around the world?",
-        "answer": "Explore international flavors with dishes like Italian Panettone, German Stollen, French Bûche de Noël, Swedish Saffransbullar, and Brazilian Rabanada."
-    }
+  {
+    "id": 1,
+    "question": "What are some traditional Christmas recipes?",
+    "answer": "Traditional Christmas recipes vary around the world, but popular dishes include Roast Turkey, Mince Pies, Christmas Pudding, Gingerbread Houses, and Eggnog."
+  },
+  {
+    "id": 2,
+    "question": "How can I make my Christmas meal vegetarian-friendly?",
+    "answer": "You can create vegetarian dishes like Stuffed Bell Peppers, Mushroom Wellington, Roasted Vegetable Medley, or a Nut Roast as the main course, along with various vegetarian sides and desserts."
+  },
+  {
+    "id": 3,
+    "question": "What are some quick and easy Christmas desserts?",
+    "answer": "Quick Christmas desserts include Chocolate Bark, Peppermint Mousse, Gingerbread Cookies, and Festive Rice Pudding. These can be made with minimal ingredients and preparation."
+  },
+  {
+    "id": 4,
+    "question": "How do I properly prepare a Christmas turkey?",
+    "answer": "Key steps include thawing the turkey thoroughly if frozen, removing giblets, seasoning or brining, and roasting until the internal temperature reaches 165°F (74°C). Always let it rest before carving."
+  },
+  {
+    "id": 5,
+    "question": "Can I prepare parts of my Christmas dinner in advance?",
+    "answer": "Absolutely! Dishes like casseroles, some desserts, and sauces can be made in advance. Prepping vegetables and setting the table a day before can also save time."
+  },
+  {
+    "id": 6,
+    "question": "What are some gluten-free Christmas recipes?",
+    "answer": "Gluten-free Christmas recipes include Flourless Chocolate Cake, Almond Flour Sugar Cookies, Gluten-Free Gravy, and Roasted Vegetable Quinoa Salad."
+  },
+  {
+    "id": 7,
+    "question": "How can I make my Christmas cooking more budget-friendly?",
+    "answer": "Opt for in-season vegetables, buy ingredients in bulk, and choose less expensive cuts of meat. Planning your menu around these items can lead to significant savings."
+  },
+  {
+    "id": 8,
+    "question": "What Christmas recipes are kid-friendly?",
+    "answer": "Kids often enjoy decorating Sugar Cookies, making Chocolate Reindeer Bark, preparing Mini Sausage Rolls, or creating their own Gingerbread House."
+  },
+  {
+    "id": 9,
+    "question": "How do I pair wine with my Christmas dinner?",
+    "answer": "A general guideline is to pair white wines like Chardonnay or Sauvignon Blanc with lighter meats and red wines like Merlot or Cabernet Sauvignon with red meats. Sparkling wines and sweet dessert wines are great with desserts."
+  },
+  {
+    "id": 10,
+    "question": "What are some unique Christmas recipes from around the world?",
+    "answer": "Explore international flavors with dishes like Italian Panettone, German Stollen, French Bûche de Noël, Swedish Saffransbullar, and Brazilian Rabanada."
+  }
 ]

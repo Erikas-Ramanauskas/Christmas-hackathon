@@ -38,8 +38,8 @@ async function displayFaqContent() {
             answer: 'No answer available'
         };
 
-        faqCard.innerHTML += `<div id="faqCard" class="row card m-2">
-        <button id="question${content.id}" class="btn btn-primary card-header border-0 faq-question" type="button" data-bs-toggle="collapse"
+        faqCard.innerHTML += `<div class="faqCard row card m-2">
+        <button id="question${content.id}" class="btn card-header border-0 faq-question collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#collapse${content.id}" aria-expanded="false" aria-controls="#collapse${content.id}">
         ${content.id}. ${content.question}</button>
     <div class="col-12">
