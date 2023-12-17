@@ -22,8 +22,8 @@ async function bFetchJson() {
 }
 
 function createImgList(arr) {
-  return arr
-    .map(
+  return shuffleArray(
+    arr.map(
       ({ id, name, country, image_url }) =>
         `
                     <div
@@ -44,9 +44,13 @@ function createImgList(arr) {
             </div>
       `
     )
-    .join("");
+  ).join("");
 }
 
 bFetchJson().then((data) => {
   galleryContainer.innerHTML = createImgList(data);
 });
+
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
