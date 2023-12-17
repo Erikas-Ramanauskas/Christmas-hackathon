@@ -23,36 +23,34 @@ async function bFetchJson() {
 
 // Connection Slider & Calendar
 function createImgList(arr) {
-  return shuffleArray(
-    arr.map(
-      ({
-        id,
-        name,
-        country,
-        image_url
-      }) =>
-      `
-                    <div
-              class="bitem"
-              style="background-image: url('${image_url}')"
-            >
-              <div class="bholder">
-                <h3 class="bcard-text">${country}</h3>
-              </div>
-              <div class="bcontent">
-                <div class="bname">${country}</div>
-                <div class="bdes">${name}</div>
-                <div class="bBtnWrap">
-                 <a class="bToCalendar" data-id="${id}" href="#section-h">SEE MORE</a>
-                 </div>
-                 </div>
+  let calendarContent = shuffleArray([...arr]);
 
-            </div>
-      `
-    )
-  ).join("");
+  let htmlContent = calendarContent.map(({
+    name,
+    country,
+    image_url
+  }, index) => `
+      <div class="bitem" style="background-image: url('${image_url}')">
+        <div class="bholder">
+          <h3 class="bcard-text">${country}</h3>
+        </div>
+        <div class="bcontent">
+          <div class="bname">${country}</div>
+          <div class="bdes">${name}</div>
+          <p>December ${index + 1}</p>
+          <div class="bBtnWrap">
+            <div class="bToCalendar" type="button" data-bs-target="#staticBackdrop" data-bs-toggle="modal">SEE MORE</div>
+          </div>
+        </div>
+      </div>
+    `).join("");
+  return {
+    htmlContent,
+    calendarContent
+  };
 }
 
+// Fetch and Pass Data to the Slider and Calendar
 bFetchJson().then((data) => {
   const {
     htmlContent,
