@@ -38,6 +38,7 @@
   border-radius: 20px;
   box-shadow: 0 30px 50px #505050;
 }
+
 .bitem .bcard-text {
   opacity: 0;
 }
@@ -58,24 +59,28 @@
   height: 100%;
   box-shadow: none;
 }
+
 .bitem:nth-child(3) {
   right: 40%;
   top: 70%;
   min-width: 140px;
   max-width: 200px;
 }
+
 .bitem:nth-child(4) {
   right: 30%;
   min-width: 140px;
   max-width: 200px;
   top: 60%;
 }
+
 .bitem:nth-child(5) {
   right: 20%;
   top: 50%;
   min-width: 140px;
   max-width: 200px;
 }
+
 .bitem:nth-child(n + 6) {
   right: 5%;
   min-width: 140px;
@@ -109,12 +114,14 @@
   display: block;
   z-index: 11111;
 }
+
 .bitem .bname {
   font-size: 30px;
   font-weight: bold;
   opacity: 0;
   animation: showcontent 1s ease-in-out 1 forwards;
 }
+
 @media screen and (min-width: 768px) {
   .bitem .bname {
     font-size: 40px;
@@ -126,24 +133,28 @@
   opacity: 0;
   animation: showcontent 1s ease-in-out 0.3s 1 forwards;
 }
+
 .bitem button {
   padding: 10px 20px;
   border: none;
   opacity: 0;
   animation: showcontent 1s ease-in-out 0.6s 1 forwards;
 }
+
 @keyframes showcontent {
   from {
     opacity: 0;
     transform: translate(0, 100px);
     filter: blur(33px);
   }
+
   to {
     opacity: 1;
     transform: translate(0, 0);
     filter: blur(0);
   }
 }
+
 .bbuttons {
   position: absolute;
   bottom: 4%;
