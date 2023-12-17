@@ -42,7 +42,7 @@
   --boxshadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   --border-width: 5px;
   --border-style: solid;
-  --border-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967) 1;
+  --border-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
   --border-image-slice: 1;
 }
 
@@ -69,14 +69,14 @@ main {
   padding: 0;
 }
 
-main > section {
+main>section {
   height: 100vh;
   background-color: var(--main-1);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-main > section:nth-child(2n) {
+main>section:nth-child(2n) {
   background-color: var(--main-2);
 }
 
@@ -184,10 +184,26 @@ h6 {
   transition: transform 0.5s linear;
 }
 
+/* contact form styles */
+
+.border-gradient {
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.border-gradient-btn {
+  border-image-source: var(--border-image);
+}
+
+#send_button:hover {
+  background-color: var(--main-2);
+}
+
 @keyframes snowfall {
   from {
     transform: translateY(-99vh) translateY(0) scale(1);
   }
+
   to {
     transform: translateY(-1vh) scale(0.3);
   }
