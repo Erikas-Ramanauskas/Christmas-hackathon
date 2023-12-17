@@ -13,8 +13,8 @@ const hCountryRecipe = document.querySelector('.hCountryRecipe');
 
 // Calendar Doors
 
-function hCalendarDoors() {
-    for (let i = 1; i <= 31; i++) {
+function hCalendarDoors(calendarContent) {
+    for (let i = 1; i <= calendarContent.length; i++) {
         const door = document.createElement('div');
         door.setAttribute('type', 'button');
         door.setAttribute('class', 'btn btn-primary');
@@ -25,34 +25,30 @@ function hCalendarDoors() {
         door.innerHTML = i;
         hCalendar.appendChild(door);
     }
+    hCellsListeners(calendarContent);
 }
 
-hCalendarDoors();
-
-// Add Event Listener to Display Recipe
-
-function hCellsListeners() {
+function hCellsListeners(calendarContent) {
     const doors = document.querySelectorAll('.door');
-    doors.forEach((door, index) => {
-        door.addEventListener('click', () => {
-            const recipeId = `${index}`;
-            hDisplayModal(recipeId);
-        });
+    doors.forEach((door) => {
+        door.removeEventListener('click', handleDoorClick);
+        door.addEventListener('click', handleDoorClick);
     });
+
+    function handleDoorClick() {
+        const recipeId = this.id.replace('door', '') - 1;
+        displayCalendarContent(calendarContent, recipeId);
+    }
 }
 
-hCellsListeners();
-
-// Display JSON Data
-async function hDisplayModal(recipeId) {
-    const data = await hFetchCalendarData();
-
+function displayCalendarContent(calendarContent, recipeId) {
     // Prepare Data
-    const contentTitle = data[recipeId].name || 'No content available for this door';
-    const contentImage = data[recipeId].image_url || 'No content available for this door';
-    const contentIngredients = data[recipeId].ingredients || 'No content available for this door';
-    const contentInstructions = data[recipeId].instructions || 'No content available for this door';
-    const contentCountry = data[recipeId].country || 'No content available for this door';
+    console.log(`My IDs start from: ${recipeId}`);
+    const contentTitle = calendarContent[recipeId].name || 'No content available for this door';
+    const contentImage = calendarContent[recipeId].image_url || 'No content available for this door';
+    const contentIngredients = calendarContent[recipeId].ingredients || 'No content available for this door';
+    const contentInstructions = calendarContent[recipeId].instructions || 'No content available for this door';
+    const contentCountry = calendarContent[recipeId].country || 'No content available for this door';
 
     // Display Data
     hTitleRecipe.innerHTML = `${contentTitle}`;
@@ -71,15 +67,4 @@ async function hDisplayModal(recipeId) {
         instructionsHtml += `<p class="text-justify">${ingredient}</p>`;
     });
     hInstructionsRecipe.innerHTML = instructionsHtml;
-}
-
-// Fetch JSON data
-async function hFetchCalendarData() {
-    try {
-        const response = await fetch('assets/data/recipies_food.json');
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching JSON data: ', error);
-    }
 }

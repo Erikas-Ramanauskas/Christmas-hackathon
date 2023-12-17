@@ -9,21 +9,22 @@
 .door {
   width: auto;
   height: auto;
-  /* background-color: #f0f0f0; */
-  color: var(--main-2);
+  background-color: var(--main-2);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   font-weight: 800;
-  background-image: linear-gradient(to right,
-      #ae8625,
-      #f7ef8a,
-      #d2ac47,
-      #edc967);
-  ;
-  border: 4px solid var(--main-2);
+  border: 4px solid #f7ef8a;
   font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.door:hover {
+  background-color: var(--main-1);
+  border: 4px solid #f7ef8a;
+  transition: 0.3s;
 }
 
 /* Calendar Model Styling */
@@ -70,4 +71,11 @@
   -webkit-text-fill-color: #f7ef8acc;
   background-clip: text;
   color: transparent;
+}
+
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 }

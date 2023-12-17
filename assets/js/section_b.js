@@ -21,36 +21,63 @@ async function bFetchJson() {
   }
 }
 
+// Connection Slider & Calendar
 function createImgList(arr) {
-  return shuffleArray(
-    arr.map(
-      ({ id, name, country, image_url }) =>
-        `
-                    <div
-              class="bitem"
-              style="background-image: url('${image_url}')"
-            >
-              <div class="bholder">
-                <h3 class="bcard-text">${country}</h3>
-              </div>
-              <div class="bcontent">
-                <div class="bname">${country}</div>
-                <div class="bdes">${name}</div>
-                <div class="bBtnWrap">
-                 <a class="bToCalendar" data-id="${id}" href="#calendar-section">SEE MORE</a>
-                 </div>
-                 </div>
+  let calendarContent = shuffleArray([...arr]);
 
-            </div>
-      `
-    )
-  ).join("");
+  let htmlContent = calendarContent.map(({
+    name,
+    country,
+    image_url
+  }, index) => `
+      <div class="bitem" style="background-image: url('${image_url}')">
+        <div class="bholder">
+          <h3 class="bcard-text">${country}</h3>
+        </div>
+        <div class="bcontent">
+          <div class="bname">${country}</div>
+          <div class="bdes">${name}</div>
+          <p>December ${index + 1}</p>
+          <div class="bBtnWrap">
+            <div class="bToCalendar" type="button" data-bs-target="#staticBackdrop" data-bs-toggle="modal">SEE MORE</div>
+          </div>
+        </div>
+      </div>
+    `).join("");
+  return {
+    htmlContent,
+    calendarContent
+  };
 }
 
+// Fetch and Pass Data to the Slider and Calendar
 bFetchJson().then((data) => {
-  galleryContainer.innerHTML = createImgList(data);
+  const {
+    htmlContent,
+    calendarContent
+  } = createImgList(data);
+  galleryContainer.innerHTML = htmlContent;
+  hCalendarDoors(calendarContent);
+  callCalendarCell(calendarContent);
+
+}).catch(error => {
+  console.error("Failed to fetch data:", error);
 });
 
+// Call Calendar Cells
+function callCalendarCell(calendarContent) {
+  let seeMore = document.querySelectorAll('.bToCalendar')
+
+  seeMore.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const recipeId = `${index}`;
+      displayCalendarContent(calendarContent, recipeId);
+    });
+  });
+
+}
+
+// Mix Recipe Arrays
 function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }

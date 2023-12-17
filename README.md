@@ -1,110 +1,184 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Christmas Advent
 
-Welcome MiaRasmussen05,
+Welcome to Christmas Advent! Get ready for a delicious journey this holiday season. Explore our Advent Calendar for a new and tasty Christmas recipe every day. These recipes are inspired by the yummy traditions of different European countries. Enjoy the festive spirit with us!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![am-i-responsive](https://github.com/zaicodes/Christmas-hackathon/blob/zai-one/assets/documentation/am-i-responsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Feel free to access the [live website](https://erikas-ramanauskas.github.io/Christmas-hackathon/) (CTRL + Click to open in a new tab).
 
-## Gitpod Reminders
+## Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [Table of Contents](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#table-of-contents)
+2. [Criteria](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#criteria)
+3. [Goal](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#goal)
+4. [Design](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#design)
+5. [Features](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#features)
+6. [Technologies Used](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#technologies-used)
+7. [Manual Testing](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#manual-testing)
+8. [Credits](#https://github.com/zaicodes/Christmas-hackathon/tree/zai-one?tab=readme-ov-file#credits)
 
-`python3 -m http.server`
+## Criteria
 
-A blue button should appear to click: _Make Public_,
+Our team tackled the relevant criteria:
 
-Another blue button should appear to click: _Open Browser_.
+- Innovative design to improve user experience
+- The project surpasses the specified task requirements
+- Responsive and accessible across various screen sizes
+- Well-planned project management using Github Projects
+- Entirely Front-end focused
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Goal
 
-A blue button should appear to click: _Make Public_,
+➡️ Problem Statement:
 
-Another blue button should appear to click: _Open Browser_.
+➡️ Objective(s):
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+➡️ Target Audience:
 
-To log into the Heroku toolbelt CLI:
+➡️ Benefits:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Colour Scheme
+
+The project incorporates Christmas-inspired colours like red, green, and gold, as well as white and black.
+
+![](https://github.com/zaicodes/Christmas-hackathon/blob/zai-one/assets/documentation/colours.png)
+
+### Fonts used
+
+### Wireframes
+
+## Features
+
+|  "  | #                                                | Feature | Desirability | Importance | Viability | Delivered |
+| :-: | :----------------------------------------------- | :-----: | :----------: | :--------: | :-------: | --------- |
+|     | One page                                         |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|  1  | scroll snaping to next section                   |    5    |      5       |     5      |    ✅     |
+|  2  | sections to be 100vh                             |    5    |      5       |     5      |    ✅     |
+|  3  | sticky navigation bar                            |    5    |      5       |     5      |    ✅     |
+|  4  | Snowfall effect                                  |    3    |      3       |     5      |    ✅     |
+| --  | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|     | Section Hero                                     |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|  5  | Eye catching imagery                             |    5    |      5       |     5      |    ✅     |
+|  6  | Welcoming headline and subheadline               |    5    |      5       |     5      |    ✅     |
+|  7  | CTA button e.g. ""Get Inspired!""                |    5    |      5       |     5      |    ✅     |
+|  8  | Countdown Timer                                  |    5    |      5       |     5      |    ✅     |
+| --  | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|     | Recipes                                          |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|  9  | Image slider                                     |    5    |      5       |     5      |    ✅     |
+| 10  | Featured recipes                                 |    5    |      5       |     5      |    ✅     |
+| 11  | Buttons to slide left or right                   |    5    |      5       |     5      |    ✅     |
+| --  | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|     | Christmas Calendar                               |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+| 12  | Advent Calendar                                  |    5    |      5       |     5      |    ✅     |
+| 13  | Images and recipe information (JSON)             |    5    |      5       |     5      |    ✅     |
+| 14  | Close and Add to Favourite options               |    5    |      5       |     5      |    ✅     |
+| --  | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|     | Team Section                                     |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+| 15  | A section title: Meet the Team                   |    5    |      5       |     5      |    ✅     |
+| 16  | Images of team members on slider                 |    5    |      5       |     5      |    ✅     |
+| --  | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|     | FAQ section                                      |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+| 17  | FAQ questions and answers                        |    5    |      5       |     5      |    ✅     |
+| 18  | Expandable/Collapsible when clicked on questions |    5    |      5       |     5      |    ✅     |
+| 19  | A button that opens all questions                |    5    |      5       |     5      |    ✅     |
+| --  | ---                                              |   ---   |     ---      |    ---     |    ---    |
+|     | Contact form                                     |         |              |            |           |
+| --- | ---                                              |   ---   |     ---      |    ---     |    ---    |
+| 20  | A form where the user can fill                   |    5    |      5       |     5      |    ✅     |
+| 21  | Name, E-mail, Subject and Message                |    5    |      5       |     5      |    ✅     |
+| 22  | A send button                                    |    5    |      5       |     5      |    ✅     | "         |
+
+## Technologies Used
+
+### Languages Used
+
+This web application was developed using the following technologies:
+
+- HTML: Used for structuring the content of the web pages.
+- CSS: Used to style the web page.
+- JavaScript: Implemented for interactivity and functionality.
+
+### Frameworks, Libraries & Programs Used
+
+The project also utilizes the following frameworks, libraries, and programs:
+
+- Bootstrap: to enable responsive development.
+- Git: for version control.
+- Github: to save code.
+- Am I Responsive: to check if the website is responsive for various devices and screen sizes.
+- Coolors: to create the colour palette.
+- JSON: to store data.
+- Google sheets: to plan and organize data.
+- Miro: to create brainstorm ideas in real-time.
+
+## Manual Testing
+
+|  "  | #                        |                                                   Feature                                                   |                                                                                                                 Expected Outcome                                                                                                                  | Testing Performed | Pass/Fail |
+| :-: | :----------------------- | :---------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------: | --------- |
+|     | Navigation               |                                                                                                             |                                                                                                                                                                                                                                                   |                   |
+| --- | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|  1  | Scroll down and up       |               The navigation bar should stay fixed at the top even when you scroll down or up               |                                                                            Scroll up the page manually, and observe. The navigation bar should stay at the viewpoint.                                                                             |        ✅         |
+|  2  | Testing responsivness    |   the sticky navigation bar smoothly transitions into the hamburger menu when the screen size is reduced.   |                             Manually resize the browser window or use developer tools to simulate a smaller screen. Open the hamburger menu and click on menu items. Confirm that the navigation functions correctly                              |        ✅         |
+| --  | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|     | Image slider             |                                                                                                             |                                                                                                                                                                                                                                                   |                   |
+| --- | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+| --  | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|     | Avdent Calendar          |                                                                                                             |                                                                                                                                                                                                                                                   |                   |
+| --- | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|  6  | Testing window opening   | Once clicked on a specific day of the calendar, a window opens smoothly and the content displays correctly. |                                                                   Click on a specific day to test if the corresponding window opens which consists of the intended information.                                                                   |        ✅         |
+|  7  | Testing window closing   |  The window closes smoothly when clicking on ""x"" button, alternatively you could click on close button.   | Inside the open window, click on the ""x"" button (found in the top-right corner). Check if the window closes with no issues. Do the same by clicking on the close button at the end of the window and confirm if the closing function is smooth. |        ✅         |
+| --  | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|     | FAQ                      |                                                                                                             |                                                                                                                                                                                                                                                   |                   |
+| --- | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|  8  | Verify initial state     |                               The answers aren't showing, only quesions are.                                |                                                                                Ensure that all the answers are initially collapsed, and only quesions are visibe.                                                                                 |        ✅         |
+|  9  | Test expansion           |                      The expansion is smooth and the answer content displays correcly.                      |                                                                               Click on a question to test if the corresponding answer expands and becomes visible.                                                                                |        ✅         |
+| 10  | Test collapse            |                    the collapse is smooth and the answer content disappears as expected.                    |                                                                               Click on the same question again to test if the answer collapses and becomes hidden.                                                                                |        ✅         |
+| 11  | Open All button          |                                        All the answers are showing.                                         |                                                                        Click on the open all button to test if all the questions collapse allowing all answers to appear.                                                                         |        ✅         |
+| --  | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+|     | Contact form             |                                                                                                             |                                                                                                                                                                                                                                                   |                   |
+| --- | ---                      |                                                     ---                                                     |                                                                                                                        ---                                                                                                                        |        ---        |
+| 12  | Test input fields        |                                    Users can input their details easily                                     |                                                           Enter valid information into each input field (name, emai, subject, message) to test that users can put their details easily.                                                           |        ✅         |
+| 13  | Test invalid Email       |              Once entered an invalid email, the form prompts the user to enter a valid email.               |                                                            Enter an invalid email address (e.g. without an ""@"" symbol) to check if the form prompts the user to enter a valid email.                                                            |        ✅         |
+| 14  | Test empty fields        |                          The form prompts the user to fill in all required fields.                          |                                                                     Try submit the form with empty fields, to check if the form prompts the user to fill the required fields.                                                                     |        ✅         |
+| 15  | Test submission          |                      Once clicked on submit button the form is submitted sucessfully.                       |                                              Enter all the valid information into all the fields and click on the ""Send"" button to submit the form. Check that the form is submitted successfully.                                              |        ✅         |
+| 16  | Check for responsiveness |                 The contact form remains functional and responsive acroos various devices.                  |                                                  Resize your browser window, or use the developer tools to simulare different screen sizes. Confirm that the form is responsive and functional.                                                   |        ✅         | "         |
+
+## Credits
+
+### Contributing
+
+We welcome contributions to improve and expand the Christmas Advent web application. If you have any suggestions, bug fixes, or new features to add, please follow these steps:
+
+- Fork the repository on GitHub.
+- Create a new branch for your feature or bug fix.
+- Make your changes and test them thoroughly.
+- Submit a pull request to the main repository with a clear description of your changes.
+
+### Acknowledgments
+
+- This project was developed for the Code Institute's December Christmas Hackathon.
+
+- We'd like to thank the Code Institute and the Hackathon organizers for the opportunity to create this festive web application.
+
+- We also want to express our gratitude to our families for their understanding and support while we immersed ourselves in coding for a few days.
+
+### Meet the Boo Army Team (Alphabetical Order)
+
+- [Efren](https://www.linkedin.com/in/efren-andablo-reyes/)
+- [Erik](https://www.linkedin.com/in/erikas-ramanauskas/)
+- [Frank](https://www.linkedin.com/in/arellanofrank/)
+- [Mia](https://www.linkedin.com/in/mia-rasmussen-088091226/)
+- [Volodymyr](https://www.linkedin.com/in/vvp-dev/)
+- [Zainab Ismail](https://www.linkedin.com/in/zainab-ismail-dev/)
 
 ---
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+Happy Holidays, and enjoy a festive season full of laughter, good food, and wonderful memories! 🎅🎄
