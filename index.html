@@ -44,13 +44,18 @@
   <body >
     <div id="snowfall"></div>
     <!-- navigation bar -->
-    <nav id="main-navbar" class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
-    <div class="container">
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img class="logo ml-5" src="assets/images/logo.webp" alt="Logo"> <span>C</span>hristmas<span>A</span>dvent
+      </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="nav nav-pills ">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#section-a">Home</a>
           </li>
@@ -80,26 +85,28 @@
       <div class="container-fluid">
         <div class="timer d-flex justify-content-center">
           <div class="countdown-container d-flex flex-wrap justify-content-center align-items-start w-100">
-            <div class="time day">100</div>
+            <span class="icon-timer me-3">6</span>
+            <div class="time day">10</div>
             <span class="text me-3 mt-2">D</span>
-            <div class="time hour">100</div>
+            <div class="time hour">10</div>
             <span class="text me-3 mt-2">H</span>
-            <div class="time minute">100</div>
+            <div class="time minute">10</div>
             <span class="text me-3 mt-2">M</span>
-            <div class="time second">100</div>
+            <div class="time second">10</div>
             <span class="text me-3 mt-2">S</span>
+            <span class="icon-timer me-3">6</span>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row align-items-center">
           <div class=" col-12 col-lg-7 hero-text">
-            <h1 class="cta-heading mt-md-5">Festive Flavors For December Treats!</h1>
             <div class="col-md-5 d-lg-none">
-              <div class="container-hero-img p-3">
+              <div class="container-hero-img p-2 p-sm-3">
                 <img src="https://imgur.com/AhvBLty.png" alt="christmas-table" class="img-hero-section col-12" />
               </div>
             </div>
+            <h1 class="cta-heading mt-md-5">Festive Flavors For December Treats!6</h1>
             <p class="mt-5 ">
               Celebrate the Season with Joyful Recipes: A Christmas Feast for
               Everyone!
@@ -110,7 +117,7 @@
           </div>
 
           <div class="col-md-5 d-none d-lg-block">
-            <div class="container-hero-img p-3 mt-5">
+            <div class="container-hero-img p-3">
               <img src="https://imgur.com/AhvBLty.png" alt="christmas-table" class="img-hero-section col-12" />
             </div>
           </div>
