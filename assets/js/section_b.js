@@ -21,11 +21,17 @@ async function bFetchJson() {
   }
 }
 
+// Connection Slider & Calendar
 function createImgList(arr) {
   return shuffleArray(
     arr.map(
-      ({ id, name, country, image_url }) =>
-        `
+      ({
+        id,
+        name,
+        country,
+        image_url
+      }) =>
+      `
                     <div
               class="bitem"
               style="background-image: url('${image_url}')"
@@ -37,7 +43,7 @@ function createImgList(arr) {
                 <div class="bname">${country}</div>
                 <div class="bdes">${name}</div>
                 <div class="bBtnWrap">
-                 <a class="bToCalendar" data-id="${id}" href="#calendar-section">SEE MORE</a>
+                 <a class="bToCalendar" data-id="${id}" href="#section-h">SEE MORE</a>
                  </div>
                  </div>
 
@@ -48,9 +54,32 @@ function createImgList(arr) {
 }
 
 bFetchJson().then((data) => {
-  galleryContainer.innerHTML = createImgList(data);
+  const {
+    htmlContent,
+    calendarContent
+  } = createImgList(data);
+  galleryContainer.innerHTML = htmlContent;
+  hCalendarDoors(calendarContent);
+  callCalendarCell(calendarContent);
+
+}).catch(error => {
+  console.error("Failed to fetch data:", error);
 });
 
+// Call Calendar Cells
+function callCalendarCell(calendarContent) {
+  let seeMore = document.querySelectorAll('.bToCalendar')
+
+  seeMore.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const recipeId = `${index}`;
+      displayCalendarContent(calendarContent, recipeId);
+    });
+  });
+
+}
+
+// Mix Recipe Arrays
 function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
