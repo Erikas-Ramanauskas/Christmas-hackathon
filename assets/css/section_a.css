@@ -9,7 +9,7 @@ a {
   display: inline-block;
 }
 
-#section-a {
+#home-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,7 +20,7 @@ a {
   width: 100%;
 }
 
-.container-section-a {
+.container-home-section {
   padding-left: 20px !important;
   padding-right: 20px !important;
   max-width: 1400px !important;
@@ -60,13 +60,7 @@ a {
 
 .container-hero-img {
   width: 155%;
-  background-image: linear-gradient(
-    to right,
-    #ae8625,
-    #f7ef8a,
-    #d2ac47,
-    #edc967
-  );
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
   border-radius: 35px;
   box-shadow: 3px 5px 1px #886719, inset 2px 2px 3px #f8f3a4;
   transform: rotate(5deg);
@@ -89,19 +83,13 @@ a {
 .btn-hero-container {
   width: 25% !important;
   height: 53px;
-  background-image: linear-gradient(
-    to right,
-    #ae8625,
-    #f7ef8a,
-    #d2ac47,
-    #edc967
-  );
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
   border-radius: 5px;
   transform: rotate(-3deg);
   margin-left: 30%;
 }
 
-#section-a p {
+#home-section p {
   width: 95%;
   font-weight: 500;
   font-size: 2rem;
@@ -178,7 +166,7 @@ a {
     margin-top: 10%;
   }
 
-  #section-a p {
+  #home-section p {
     font-size: 1.3rem;
   }
 
@@ -208,7 +196,7 @@ a {
     margin-top: 10%;
   }
 
-  #section-a p {
+  #home-section p {
     font-size: 1.1rem;
     margin-left: 5%;
   }
@@ -239,7 +227,7 @@ a {
     margin-top: 10%;
   }
 
-  #section-a p {
+  #home-section p {
     font-size: 1.1rem;
     margin-left: 5%;
   }
@@ -277,7 +265,7 @@ a {
     margin-top: 50px;
   }
 
-  #section-a p {
+  #home-section p {
     font-size: 20px;
     text-shadow: 1px 1px 10px #000, 1px 1px 20px #000;
     padding: 2%;
@@ -318,7 +306,7 @@ a {
     margin-top: 10%;
   }
 
-  #section-a p {
+  #home-section p {
     font-size: 20px;
     text-shadow: 1px 1px 10px #000, 1px 1px 20px #000;
     padding: 2%;

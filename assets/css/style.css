@@ -205,30 +205,3 @@ h6 {
     transform: translateY(110vh) scale(0.3);
   }
 }
-
-/* E section Font */
-#section-e > div > h1 {
-  font-family: var(--special-font);
-}
-
-.e-hero-name-container {
-  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
-  border-radius: 5px;
-  padding: 5px;
-  display: inline;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-.e-member-name {
-  color: var(--text);
-  background-color: var(--main-1);
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.e-member-name:hover,
-.e-member-name:focus {
-  background-color: var(--main-2);
-}

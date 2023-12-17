@@ -1,4 +1,4 @@
-const eSection = document.getElementById("section-e");
+const eSection = document.getElementById("team-section");
 
 const etrack = document.getElementById("e-image-track");
 

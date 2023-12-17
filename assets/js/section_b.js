@@ -37,7 +37,7 @@ function createImgList(arr) {
                 <div class="bname">${country}</div>
                 <div class="bdes">${name}</div>
                 <div class="bBtnWrap">
-                 <a class="bToCalendar" data-id="${id}" href="#section-h">SEE MORE</a>
+                 <a class="bToCalendar" data-id="${id}" href="#calendar-section">SEE MORE</a>
                  </div>
                  </div>
 
