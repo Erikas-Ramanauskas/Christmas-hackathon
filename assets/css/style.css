@@ -64,8 +64,7 @@ body {
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
+
   padding: 0;
 }
 
@@ -171,6 +170,19 @@ h6 {
   color: white;
 }
 
+#snowfall {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9999999;
+  pointer-events: none; 
+}
+
+
 .snowflake {
   width: 5px;
   height: 5px;
@@ -180,15 +192,19 @@ h6 {
   z-index: 1;
   background-color: #def7ff;
   box-shadow: 0 0 5px 5px #b6edff;
-  animation: snowfall linear infinite;
-  transition: transform 0.5s linear;
+  animation: snowfall 1s infinite linear forwards;
 }
 
 @keyframes snowfall {
-  from {
-    transform: translateY(-99vh) translateY(0) scale(1);
+  0% {
+    transform: translateY(1vh) scale(1);
   }
-  to {
-    transform: translateY(-1vh) scale(0.3);
+  
+  25% {
+    transform: translateY(220vh) scale(0.3);
+  }
+  
+  100% {
+    transform: translateY(110vh) scale(0.3);
   }
 }
