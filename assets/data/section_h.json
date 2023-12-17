@@ -23,7 +23,7 @@
     "image_name": "assets/images/section_b/1.webp",
     "country": "Austria",
     "day": 1,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -33,7 +33,7 @@
       "Melt the chopped chocolate in a heatproof bowl set over a pan of simmering water (double boiler) or in short bursts in the microwave, stirring frequently until smooth. Remove from heat and let it cool slightly.",
       "In a clean, dry bowl, whip the egg whites with a pinch of salt until they form stiff peaks. Set aside.",
       "In another bowl, whip the heavy cream until it forms soft peaks. Set aside. In a separate bowl, whisk the egg yolks, sugar, and vanilla extract together until well combined. Gradually pour the slightly cooled melted chocolate into the egg yolk mixture, whisking continuously until well combined.",
-      "Gently fold the whipped cream into the chocolate mixture until no streaks remain. Then, fold in the whipped egg whites in batches, being careful not to deflate the mixture. Fold until the mixture is homogeneous.",
+      "Gently fold the whipped cream into the chocolate mixture until no streaks reMain. Then, fold in the whipped egg whites in batches, being careful not to deflate the mixture. Fold until the mixture is homogeneous.",
       "Spoon or pour the chocolate mousse into serving glasses or a serving bowl. Refrigerate the mousse for at least 2-3 hours, or until set."
     ],
     "ingredients": [
@@ -118,7 +118,7 @@
     "image_name": "no_image",
     "country": "United Kingdom",
     "day": 2,
-    "type": "main",
+    "type": "Main",
     "vegan": true
   },
   {
@@ -207,7 +207,7 @@
     "image_name": "no_image",
     "country": "country3",
     "day": 3,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -275,7 +275,7 @@
     "image_name": "no_image",
     "country": "country4",
     "day": 4,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -343,7 +343,7 @@
     "image_name": "no_image",
     "country": "country5",
     "day": 5,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -411,7 +411,7 @@
     "image_name": "no_image",
     "country": "country6",
     "day": 6,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -479,7 +479,7 @@
     "image_name": "no_image",
     "country": "country7",
     "day": 7,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -547,7 +547,7 @@
     "image_name": "no_image",
     "country": "country8",
     "day": 8,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -615,7 +615,7 @@
     "image_name": "no_image",
     "country": "country9",
     "day": 9,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -683,7 +683,7 @@
     "image_name": "no_image",
     "country": "country10",
     "day": 10,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -751,7 +751,7 @@
     "image_name": "no_image",
     "country": "country11",
     "day": 11,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -819,7 +819,7 @@
     "image_name": "no_image",
     "country": "country12",
     "day": 12,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -887,7 +887,7 @@
     "image_name": "no_image",
     "country": "country13",
     "day": 13,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -955,7 +955,7 @@
     "image_name": "no_image",
     "country": "country14",
     "day": 14,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1023,7 +1023,7 @@
     "image_name": "no_image",
     "country": "country15",
     "day": 15,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1091,7 +1091,7 @@
     "image_name": "no_image",
     "country": "country16",
     "day": 16,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1159,7 +1159,7 @@
     "image_name": "no_image",
     "country": "country17",
     "day": 17,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1227,7 +1227,7 @@
     "image_name": "no_image",
     "country": "country18",
     "day": 18,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1295,7 +1295,7 @@
     "image_name": "no_image",
     "country": "country19",
     "day": 19,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1363,7 +1363,7 @@
     "image_name": "no_image",
     "country": "country20",
     "day": 20,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1431,7 +1431,7 @@
     "image_name": "no_image",
     "country": "country21",
     "day": 21,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1499,7 +1499,7 @@
     "image_name": "no_image",
     "country": "country22",
     "day": 22,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1567,7 +1567,7 @@
     "image_name": "no_image",
     "country": "country23",
     "day": 23,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1635,7 +1635,7 @@
     "image_name": "no_image",
     "country": "country24",
     "day": 24,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1703,7 +1703,7 @@
     "image_name": "no_image",
     "country": "country25",
     "day": 25,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1771,7 +1771,7 @@
     "image_name": "no_image",
     "country": "country26",
     "day": 26,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1839,7 +1839,7 @@
     "image_name": "no_image",
     "country": "country27",
     "day": 27,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1907,7 +1907,7 @@
     "image_name": "no_image",
     "country": "country28",
     "day": 28,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -1975,7 +1975,7 @@
     "image_name": "no_image",
     "country": "country29",
     "day": 29,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -2043,7 +2043,7 @@
     "image_name": "no_image",
     "country": "country30",
     "day": 30,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {
@@ -2111,7 +2111,7 @@
     "image_name": "no_image",
     "country": "country31",
     "day": 31,
-    "type": "main",
+    "type": "Main",
     "vegan": false
   },
   {

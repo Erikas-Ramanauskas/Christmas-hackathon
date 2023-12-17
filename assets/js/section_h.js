@@ -59,18 +59,18 @@ async function hDisplayModal(recipeId) {
     let contentVegan = data[recipeId].vegan || 'No content available for this door';
 
     if (contentVegan == false) {
-        contentVegan = 'No';
+        contentVegan = 'Not Vegan';
     } else {
-        contentVegan = 'Yes';
+        contentVegan = 'Vegan';
     }
 
     // Display Data
     hTitleRecipe.innerHTML = `#${recipeId} ${contentTitle}`;
     hImageRecipe.setAttribute('src', `${contentImage}`);
-    hDayRecipe.innerHTML = `<strong>Day</strong>: ${contentDay} | `;
-    hCountryRecipe.innerHTML = `<strong>Country</strong>: ${contentCountry}  | `;
-    hTypeRecipe.innerHTML = `<strong>Type</strong>: ${contentType}  | `;
-    hVeganRecipe.innerHTML = `<strong>Vegan</strong>: ${contentVegan}  | `;
+    hDayRecipe.innerHTML = `Day ${contentDay}`;
+    hCountryRecipe.innerHTML = `${contentCountry}`;
+    hTypeRecipe.innerHTML = `${contentType}`;
+    hVeganRecipe.innerHTML = `${contentVegan}`;
     hIngredientsRecipe.innerHTML = `<strong>Ingredients</strong><br>${contentIngredients}`;
 }
 
