@@ -69,6 +69,9 @@ a {
   padding: 0 5px 5px 0;
   border-radius: 35px;
   transform: rotate(5deg);
+  padding: 0.6rem;
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  box-shadow: 5px 5px 1px #886719, inset 2px 2px 3px #f8f3a4;
 }
 
 .a-hero-img-col{
@@ -80,8 +83,6 @@ a {
 .img-hero-section {
   max-width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 5px #000;
-  box-shadow: 5px 5px 1px #886719, inset 2px 2px 3px #f8f3a4;
 }
 
 .btn-hero-container {
@@ -225,6 +226,12 @@ a {
   
   .icon-timer {
     font-size: 2rem;
+  }
+  
+  .container-hero-img {
+    padding: 0.3rem;
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+    box-shadow: 3px 3px 1px #886719, inset 1px 1px 2px #f8f3a4;
   }
 }
 
