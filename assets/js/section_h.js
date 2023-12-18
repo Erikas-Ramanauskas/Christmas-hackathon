@@ -82,16 +82,25 @@ document.getElementById('share-twitter').addEventListener('click', function () {
 });
 
 // Get the sharing button element within the modal
-const shareButton = document.querySelector('#share-facebook');
+const shareFacebook = document.querySelector('#share-facebook');
+const shareTwitter = document.querySelector('#share-twitter');
+const shareInstagram = document.querySelector('#share-instagram');
+const copyLinkButton = document.getElementById('copyLinkButton');
 
 // Add a click event listener to the sharing button
-shareButton.addEventListener('click', function () {
-    // Get the URL of the recipe or the page containing the recipe
+shareFacebook.addEventListener('click', function () {
     const recipeUrl = 'https://erikas-ramanauskas.github.io/Christmas-hackathon/';
-
-    // Construct the Facebook sharing URL with the recipe URL
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(recipeUrl)}`;
-
-    // Open the sharing URL in a new window
     window.open(facebookShareUrl, '_blank');
+});
+
+shareTwitter.addEventListener('click', function () {
+    const recipeUrl = 'https://erikas-ramanauskas.github.io/Christmas-hackathon/';
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(recipeUrl)}`;
+    window.open(twitterShareUrl, '_blank');
+});
+
+shareInstagram.addEventListener('click', function () {
+    // Provide instructions or a message guiding users to share on Instagram manually
+    alert("To share on Instagram, please open the Instagram app and share this content.");
 });
