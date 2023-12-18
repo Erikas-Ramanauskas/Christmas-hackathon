@@ -1,32 +1,32 @@
-#contact-section{
+#contact-section {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-#contactForm{
+#contactForm {
     background-color: var(--main-1);
     color: var(--text);
 }
 
-.h-border{
+.h-border {
     border: 4px solid #f7ef8a;
 }
 
-.card-header{
+.card-header {
     color: #f7ef8a;
 }
 
-.form-control{
+.form-control {
     background-color: var(--main-1);
     color: var(--text);
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: var(--text);
 }
 
-.form-control:focus{
+.form-control:focus {
     background-color: var(--main-2);
     border-color: #f7ef8a;
     color: var(--text);
@@ -38,19 +38,25 @@
     align-items: center;
 }
 
-#g-send-container > div{
-   background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
-   border-radius: 5px;
+#g-send-container>div {
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+    border-radius: 5px;
 }
 
-#g-send-container > div > button{
+#g-send-container>div>button {
     background-color: var(--main-2);
     color: var(--text);
     margin: 5px;
     border-radius: 5px;
 }
 
-#g-send-container > div > button:hover{
+#g-send-container>div>button:hover {
     background-color: var(--main-1);
+    color: var(--text);
+}
+
+#g-send-container>div>button:focus {
+    background-color: var(--main-2);
+    border-color: transparent !important;
     color: var(--text);
 }
