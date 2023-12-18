@@ -2,8 +2,7 @@ const eSection = document.getElementById("team-section");
 
 const etrack = document.getElementById("e-image-track");
 
-const eTeamMembers = [
-  {
+const eTeamMembers = [{
     name: "Mia",
     gitHubLink: "https://github.com/MiaRasmussen05",
     imageUrl: "https://ca.slack-edge.com/T0L30B202-U03L4K3BVML-f9fa622e9538-512",
@@ -48,10 +47,14 @@ function eCreateTeamMemberElement(teamMember) {
   eTeamMemberImg.classList.add("e-image");
   eTeamMemberImg.setAttribute("draggable", "false");
 
+
   const eTeamMemberName = document.createElement("a");
   eTeamMemberName.href = teamMember.gitHubLink;
   eTeamMemberName.classList.add("e-member-name");
   eTeamMemberName.innerHTML = teamMember.name;
+  eTeamMemberName.setAttribute("target", "_blank");
+  eTeamMemberName.setAttribute("rel", "noopener noreferrer");
+  eTeamMemberName.setAttribute("aria-label", "GitHub");
 
   const eTeamMemberNameContainer = document.createElement("div");
   eTeamMemberNameContainer.classList.add("e-hero-name-container");
@@ -103,20 +106,20 @@ const ehandleOnMove = (e) => {
 
   etrack.dataset.percentage = nextPercentage;
 
-  etrack.animate(
-    {
-      transform: `translate(${nextPercentage}%, -50%)`,
-    },
-    { duration: 1200, fill: "forwards" }
-  );
+  etrack.animate({
+    transform: `translate(${nextPercentage}%, -50%)`,
+  }, {
+    duration: 1200,
+    fill: "forwards"
+  });
 
   for (const image of etrack.getElementsByClassName("e-image")) {
-    image.animate(
-      {
-        objectPosition: `${100 + nextPercentage}% center`,
-      },
-      { duration: 1200, fill: "forwards" }
-    );
+    image.animate({
+      objectPosition: `${100 + nextPercentage}% center`,
+    }, {
+      duration: 1200,
+      fill: "forwards"
+    });
   }
 };
 
