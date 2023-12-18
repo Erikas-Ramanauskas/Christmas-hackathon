@@ -175,6 +175,10 @@ h6 {
   color: white;
 }
 
+#title{
+  font-size: 3rem;
+}
+
 #snowfall {
   position: fixed;
   left: 0;
@@ -210,5 +214,27 @@ h6 {
 
   100% {
     transform: translateY(110vh) scale(0.3);
+  }
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .cta-heading {
+  font-size: 2.6rem;
+  }
+  
+  .time{
+    font-size: 1.5rem;
+  }
+  
+  .text {
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+
+  }
+  
+  .icon-timer {
+    font-size: 1.5rem;
   }
 }

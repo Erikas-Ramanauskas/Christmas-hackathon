@@ -234,24 +234,3 @@ a {
     box-shadow: 3px 3px 1px #886719, inset 1px 1px 2px #f8f3a4;
   }
 }
-
-
-@media screen and (max-width: 425px) {
-  .cta-heading {
-  font-size: 2.6rem;
-  }
-  
-  .time{
-    font-size: 1.5rem;
-  }
-  
-  .text {
-    padding-top: 0.3rem;
-    font-size: 1.2rem;
-
-  }
-  
-  .icon-timer {
-    font-size: 1.5rem;
-  }
-}
