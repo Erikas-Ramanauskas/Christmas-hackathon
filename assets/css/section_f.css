@@ -1,16 +1,16 @@
 /* Generalities */
-#faq-section{
+#faq-section {
     display: flex;
     flex-direction: center;
     align-items: center;
 }
 
-#faq-section > div{
+#faq-section>div {
     max-height: 90vh;
     overflow-y: auto;
 }
 
-#faq-section .card{
+#faq-section .card {
     color: white;
     height: 100%;
     overflow: auto;
@@ -18,37 +18,37 @@
     border: 1px solid #f7ef8acc;
 }
 
-.faqCard > button.collapsed{
+.faqCard>button.collapsed {
     background-color: var(--main-2);
     color: var(--text)
 }
 
-.faqCard > button{
+.faqCard>button {
     background-color: var(--main-1);
 }
 
-.faqCard > button:hover{
+.faqCard>button:hover {
     background-color: var(--main-1);
     color: #f7ef8acc;
 }
 
 
 
-#faq-section h2{
+#faq-section h2 {
     color: #f7ef8acc;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
 /* FAQ */
 
-.faq-question{
+.faq-question {
     text-align: left;
 }
 
-.faq-answer{
+.faq-answer {
     text-align: justify;
     font-size: 0.9rem;
 }

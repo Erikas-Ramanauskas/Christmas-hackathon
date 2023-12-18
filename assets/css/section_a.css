@@ -57,7 +57,7 @@ a {
 }
 
 
-.cta-heading > span{
+.cta-heading>span {
   white-space: nowrap;
 }
 
@@ -74,7 +74,7 @@ a {
   box-shadow: 5px 5px 1px #886719, inset 2px 2px 3px #f8f3a4;
 }
 
-.a-hero-img-col{
+.a-hero-img-col {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ a {
   align-items: center;
 }
 
-.btn-hero-container > div{
+.btn-hero-container>div {
   display: inline;
   background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
   border-radius: 5px;
@@ -154,39 +154,39 @@ a {
 /*  END OF SECTION A */
 @media screen and (max-width: 1300px) {
   .cta-heading {
-  font-size: 4.5rem;
+    font-size: 4.5rem;
   }
-  
-  #home-section p{
+
+  #home-section p {
     font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .cta-heading {
-  font-size: 4.5rem;
+    font-size: 4.5rem;
   }
-  
-  #home-section p{
+
+  #home-section p {
     font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .cta-heading {
-  font-size: 3.5rem;
+    font-size: 3.5rem;
   }
-  
-  #home-section p{
+
+  #home-section p {
     font-size: 1.1rem;
   }
-  
+
   .container-hero-img {
-  width: 80%;
-  transform: rotate(-5deg);
+    width: 80%;
+    transform: rotate(-5deg);
   }
-  
-  .timer{
+
+  .timer {
     font-size: 1.5rem;
     transform: rotate(-2deg);
   }
@@ -194,40 +194,40 @@ a {
 
 @media screen and (max-width: 425px) {
   .cta-heading {
-  font-size: 3rem;
+    font-size: 3rem;
   }
-  
-  #home-section p{
+
+  #home-section p {
     font-size: 1.1rem;
   }
-  
+
   .container-hero-img {
-  width: 80%;
-  transform: rotate(-5deg);
+    width: 80%;
+    transform: rotate(-5deg);
   }
-  
+
   btn-hero {
     font-size: 0.9rem;
   }
-  
-  .timer{
+
+  .timer {
     transform: rotate(-2deg);
   }
-  
-  .time{
+
+  .time {
     font-size: 2rem;
   }
-  
+
   .text {
     padding-top: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
   .icon-timer {
     font-size: 2rem;
   }
-  
+
   .container-hero-img {
     padding: 0.3rem;
     background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);

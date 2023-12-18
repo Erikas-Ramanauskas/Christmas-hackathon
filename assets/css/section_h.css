@@ -145,16 +145,13 @@
   width: auto;
   height: auto;
   background-color: var(--main-1);
-  /* Primary background color */
   color: white;
-  /* Text color */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   font-weight: 800;
   border: 4px solid #f7ef8a;
-  /* Border color */
   font-size: 1.5rem;
   transition: 0.3s;
 }

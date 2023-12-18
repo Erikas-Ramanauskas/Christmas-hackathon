@@ -10,12 +10,12 @@ if (!embedimSnow) {
 
     for (let i = 1; i < 200; i++) {
         snowflakeHTML += '<div class="snowflake"></div>';
-        
+
         const randomX = (getRandomNumber(0, 1000000) * 0.0001),
-              randomOffset = getRandomNumber(-100000, 100000) * 0.0001,
-              randomTime = (getRandomNumber(3, 8) * 10).toFixed(2),
-              randomScale = (getRandomNumber(0, 10000) * 0.0001).toFixed(2);
-        
+            randomOffset = getRandomNumber(-100000, 100000) * 0.0001,
+            randomTime = (getRandomNumber(3, 8) * 10).toFixed(2),
+            randomScale = (getRandomNumber(0, 10000) * 0.0001).toFixed(2);
+
         snowflakeCSS += `
             .snowflake:nth-child(${i}) {
                 opacity: ${(getRandomNumber(1, 10000) * 0.0001).toFixed(2)};

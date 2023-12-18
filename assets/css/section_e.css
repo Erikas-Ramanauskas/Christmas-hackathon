@@ -4,11 +4,11 @@
   position: relative;
 }
 
-#team-section > div {
+#team-section>div {
   padding-top: 15vh;
 }
 
-#team-section > div > h1 {
+#team-section>div>h1 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
   font-size: 4rem;
@@ -25,8 +25,10 @@
   left: 50%;
   top: 50%;
   transform: translate(0%, -50%);
-  user-select: none; /* -- Prevent image highlighting -- */
-  touch-action: none; /* -- Prevent image dragging -- */
+  user-select: none;
+  /* -- Prevent image highlighting -- */
+  touch-action: none;
+  /* -- Prevent image dragging -- */
 }
 
 .e-image {
@@ -53,7 +55,7 @@
 }
 
 /* E section Font */
-#team-section > div > h1 {
+#team-section>div>h1 {
   font-family: var(--special-font);
 }
 
@@ -80,11 +82,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #team-section > div > h1 {
+  #team-section>div>h1 {
     font-size: 3rem;
   }
 
-  #team-section > div {
+  #team-section>div {
     padding-top: 20vh;
   }
 
@@ -107,11 +109,11 @@
 }
 
 @media screen and (max-width: 425px) {
-  #team-section > div > h1 {
+  #team-section>div>h1 {
     font-size: 2rem;
   }
 
-  #team-section > div {
+  #team-section>div {
     padding-top: 25vh;
   }
 
