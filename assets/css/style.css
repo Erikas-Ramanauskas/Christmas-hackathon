@@ -66,14 +66,14 @@ main {
   padding: 0;
 }
 
-main > section {
+main>section {
   height: 100vh;
   background-color: var(--main-1);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-main > section:nth-child(2n) {
+main>section:nth-child(2n) {
   background-color: var(--main-2);
 }
 
@@ -175,7 +175,7 @@ h6 {
   color: white;
 }
 
-#title{
+#title {
   font-size: 3rem;
 }
 
@@ -221,19 +221,19 @@ h6 {
 
 @media screen and (max-width: 425px) {
   .cta-heading {
-  font-size: 2.6rem;
+    font-size: 2.6rem;
   }
-  
-  .time{
+
+  .time {
     font-size: 1.5rem;
   }
-  
+
   .text {
     padding-top: 0.3rem;
     font-size: 1.2rem;
 
   }
-  
+
   .icon-timer {
     font-size: 1.5rem;
   }

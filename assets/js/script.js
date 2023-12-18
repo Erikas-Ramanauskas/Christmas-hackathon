@@ -19,7 +19,12 @@ function snowflakeCreation() {
   snowflake.style.opacity = Math.random() * 0.7 + 0.3;
 
   const direction = ((Math.random() * 1001 - 500) * window.innerWidth) / 1000;
-  snowflake.animate({ transform: `translateX(${direction}px)` }, { duration: animationDuration * 1000, iterations: 1 });
+  snowflake.animate({
+    transform: `translateX(${direction}px)`
+  }, {
+    duration: animationDuration * 1000,
+    iterations: 1
+  });
 
   snowfall.appendChild(snowflake);
 
