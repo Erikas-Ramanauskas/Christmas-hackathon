@@ -1,5 +1,5 @@
 /* Style for calendar doors */
-#calendar-section{
+#calendar-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +47,11 @@
   display: inline-block;
 }
 
+.hTitleRecipe {
+  font-family: var(--special-font);
+  font-size: 3rem;
+}
+
 .modal-image-container {
   width: 100%;
   overflow: hidden;
@@ -65,6 +70,14 @@
   width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+.share-icon {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 0 5px;
+  color: #ae8625;
 }
 
 .metaData {
