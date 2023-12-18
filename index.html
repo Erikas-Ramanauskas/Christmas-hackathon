@@ -194,20 +194,28 @@
             <div class="modal-content">
               <div class="modal-header text-center">
                 <!-- Title -->
-                <h2 class="hTitleRecipe modal-title d-inline-block" id="recipeTitle"></h2>
+                <h2 class="hTitleRecipe modal-title w-100 text-center d-inline-block" id="recipeTitle"></h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <!-- Image Container -->
-                <div class="modal-image-container position-relative text-center mb-3 mt-1">
+                <div class="modal-image-container position-relative text-center mb-2 mt-1">
                   <!-- Image -->
                   <img class="hImageRecipe" alt="Thumbnail" width="100%" height="auto">
-
                   <!-- Meta Data -->
                   <div class="metaData position-absolute">
                     <span class="recipe-metadata hCountryRecipe px-3 py-1"></span>
                   </div>
                 </div>
+                <div class="d-flex justify-content-end">
+                  <button title="share on Twitter" class="share-icon" id="share-twitter"><i
+                      class="fa-brands fa-x-twitter"></i></button>
+                  <button title="share on Facebook" class="share-icon" id="share-facebook"><i
+                      class="fa-brands fa-facebook"></i></button>
+                  <button title="share on Instagram" class="share-icon" id="share-instagram"><i
+                      class="fa-brands fa-instagram"></i></button>
+                </div>
+
 
 
                 <!-- Ingredients -->
@@ -311,8 +319,8 @@
                 <!-- Name Input -->
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input autocomplete="name" name="from_name" class="form-control h-border" id="name" aria-describedby="nameHelp" placeholder="how do we call you?"
-                    required auto>
+                  <input autocomplete="name" name="from_name" class="form-control h-border" id="name"
+                    aria-describedby="nameHelp" placeholder="how do we call you?" required auto>
                 </div>
 
                 <!-- Email Input -->
@@ -325,16 +333,18 @@
                 <!-- Subject Input -->
                 <div class="mb-3">
                   <label for="subject" class="form-label">Subject</label>
-                  <input autocomplete="on" name="the_subject" type="text" class="form-control h-border" id="subject" placeholder="What is your message about?"
-                    aria-describedby="subjectHelp" required>
+                  <input autocomplete="on" name="the_subject" type="text" class="form-control h-border" id="subject"
+                    placeholder="What is your message about?" aria-describedby="subjectHelp" required>
                 </div>
 
                 <!-- Message Input -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <textarea autocomplete="on" name="the_idea" type="text" class="form-control h-border" id="message" rows="7"
-                    cols="7" aria-describedby="messageHelp" placeholder="Let us know if you have any qestions or would like to sugest a recipie" required></textarea>
-                  </div>
+                  <textarea autocomplete="on" name="the_idea" type="text" class="form-control h-border" id="message"
+                    rows="7" cols="7" aria-describedby="messageHelp"
+                    placeholder="Let us know if you have any qestions or would like to sugest a recipie"
+                    required></textarea>
+                </div>
               </div>
 
               <!-- Footer -->
@@ -362,7 +372,7 @@
   <script defer src="assets/js/section_f.js"></script>
   <script defer src="assets/js/section_h.js"></script>
   <script defer src="assets/js/section_g.js"></script>
-  
+
   <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

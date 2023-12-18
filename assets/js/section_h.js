@@ -52,6 +52,7 @@ function displayCalendarContent(calendarContent, recipeId) {
 
     // Display Data
     hTitleRecipe.innerHTML = `${contentTitle}`;
+    hTitleRecipe.setAttribute('title', `${contentTitle}`); // Setting the title attribute for tooltip
     hImageRecipe.setAttribute('src', `${contentImage}`);
     hCountryRecipe.innerHTML = `${contentCountry}`;
 
@@ -68,3 +69,29 @@ function displayCalendarContent(calendarContent, recipeId) {
     });
     hInstructionsRecipe.innerHTML = instructionsHtml;
 }
+
+// Sharing Buttons
+
+document.getElementById('share-twitter').addEventListener('click', function () {
+    const shareUrl = 'https://twitter.com/?lang=en';
+
+    // Construct the Twitter sharing URL with the appropriate parameters
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}`;
+
+    window.open(twitterShareUrl, '_blank');
+});
+
+// Get the sharing button element within the modal
+const shareButton = document.querySelector('#share-facebook');
+
+// Add a click event listener to the sharing button
+shareButton.addEventListener('click', function () {
+    // Get the URL of the recipe or the page containing the recipe
+    const recipeUrl = 'https://erikas-ramanauskas.github.io/Christmas-hackathon/';
+
+    // Construct the Facebook sharing URL with the recipe URL
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(recipeUrl)}`;
+
+    // Open the sharing URL in a new window
+    window.open(facebookShareUrl, '_blank');
+});
