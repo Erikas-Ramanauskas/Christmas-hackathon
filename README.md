@@ -180,7 +180,7 @@ We welcome contributions to improve and expand the Christmas Advent web applicat
 
 - We also want to express our gratitude to our families for their understanding and support while we immersed ourselves in coding for a few days.
 
-### Meet the Boo Army Team (Alphabetical Order)
+### Meet the Santa's las Cookie Team (Alphabetical Order)
 
 - [Efren](https://www.linkedin.com/in/efren-andablo-reyes/)
 - [Erik](https://www.linkedin.com/in/erikas-ramanauskas/)
