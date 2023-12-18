@@ -1,6 +1,6 @@
 # Christmas Advent
 
-Welcome to Christmas Advent! Get ready for a delicious journey this holiday season. Explore our Advent Calendar for a new and tasty Christmas recipe every day. These recipes are inspired by the yummy traditions of different European countries. Enjoy the festive spirit with us!
+Welcome to our festive Christmas recipe website! Explore a delicious variety of European meals with our easy-to-use Slider and Advent Calendar. Each day brings a new surprise recipe from different countries, perfect for sharing with family and friends. Celebrate the holiday season with our delightful, diverse dishes and create memorable moments around the table.
 
 ![am-i-responsive](https://github.com/zaicodes/Christmas-hackathon/blob/zai-one/assets/documentation/am-i-responsive.png)
 
