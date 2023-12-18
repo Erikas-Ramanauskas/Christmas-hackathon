@@ -54,27 +54,3 @@ async function displayFaqContent() {
 }
 
 displayFaqContent();
-
-// FAQ Button Toggle
-
-const seeAllButton = document.querySelector('#faqButton')
-seeAllButton.textContent = 'Open All'
-let buttonState = 0;
-
-seeAllButton.addEventListener('click', () => {
-
-    if (buttonState === 0) {
-        seeAllButton.textContent = 'Close All';
-        buttonState = 1;
-
-        seeAllButton.classList.remove('btn-primary')
-        seeAllButton.classList.add('btn-danger')
-
-    } else if (buttonState === 1) {
-        seeAllButton.textContent = 'Open All';
-        buttonState = 0;
-
-        seeAllButton.classList.remove('btn-danger')
-        seeAllButton.classList.add('btn-primary')
-    }
-})
