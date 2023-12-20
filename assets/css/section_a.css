@@ -42,6 +42,10 @@ a {
   max-width: 150px;
 }
 
+#iconContainer i {
+  font-size: 2rem;
+}
+
 .cta-heading {
   color: var(--main-2);
   position: relative;

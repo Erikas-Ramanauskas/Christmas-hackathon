@@ -67,3 +67,23 @@ function snowflakesInterval() {
 
   setInterval(snowflakeCreation, interval);
 }
+
+//hourglass
+
+const iconContainer = document.getElementById('iconContainer');
+
+// Array containing the hourglass icons from FontAwesome
+const hourglassIcons = ['fas fa-hourglass-start', 'fas fa-hourglass-half', 'fas fa-hourglass-end'];
+
+// Function to toggle between icons animation
+function toggleHourglassIcons() {
+  let index = 0;
+
+  // Change icon at intervals every 1 seconds
+  setInterval(() => {
+    iconContainer.innerHTML = `<i class="${hourglassIcons[index]}"></i>`;
+    index = (index + 1) % hourglassIcons.length;
+  }, 1000);
+}
+
+toggleHourglassIcons();

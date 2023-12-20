@@ -94,6 +94,10 @@
           </li>
         </ul>
       </div>
+      <div id="iconContainer" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTimer"
+        aria-expanded="false" aria-controls="collapseTimer" class="mx-5">
+        <i id="showTimer" class="fas fa-hourglass-start"></i>
+      </div>
     </div>
   </nav>
 
@@ -101,7 +105,7 @@
     data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
     <!-- Hero Section "SECTION A" -->
     <section id="home-section" class="d-flex flex-column">
-      <div class="container-fluid mb-xl-5 mb-0">
+      <div class="container-fluid mb-xl-5 mb-0 collapse" id="collapseTimer">
         <div class="timer d-flex justify-content-center">
           <div class="countdown-container d-flex flex-wrap justify-content-center align-items-start w-100">
             <span class="icon-timer me-2">6</span>
