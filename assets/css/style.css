@@ -32,6 +32,8 @@
   --main-font: "Dosis", sans-serif;
 
   --text: #ffffff;
+  --main-1-bg: linear-gradient(#007536, #FFF);
+  --main-2-bg: linear-gradient(#801105, #FFF);
   --main-1: #007536;
   --main-2: #801105;
   --secondary: #000000;
@@ -42,7 +44,7 @@
   --boxshadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   --border-width: 5px;
   --border-style: solid;
-  --border-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967) 1;
+  --border-image: linear-gradient(to right, #ae8625, #f7ef8a, #FFF, #FFF, #FFF, #d2ac47, #edc967) 1;
   --border-image-slice: 1;
 }
 
@@ -68,13 +70,13 @@ main {
 
 main>section {
   height: 100vh;
-  background-color: var(--main-1);
+  background-image: var(--main-1-bg);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
 main>section:nth-child(2n) {
-  background-color: var(--main-2);
+  background-image: var(--main-2-bg);
 }
 
 section div h1 {
@@ -95,7 +97,7 @@ h6 {
 
 /* text color variable used for background color */
 .color-text-bg {
-  background-color: var(--text);
+  background-image: var(--text);
 }
 
 /* text color variable used for text color */
@@ -105,7 +107,7 @@ h6 {
 
 /* background color variable used for background */
 .color-bg-bg {
-  background-color: var(--main-1);
+  background-image: var(--main-1-bg);
 }
 
 /* background color variable used for text */
@@ -115,7 +117,7 @@ h6 {
 
 /* primary color variable used for background */
 .color-pr-bg {
-  background-color: var(--main-2);
+  background-image: var(--main-2-bg);
 }
 
 /* primary color variable used for text */
@@ -146,7 +148,7 @@ h6 {
 /* navigation bar */
 
 .nav-border {
-  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a, #FFF, #FFF, #FFF, #d2ac47, #edc967);
   border-radius: 5px;
   padding: 4px;
   margin-left: 4px;
@@ -176,7 +178,7 @@ h6 {
 }
 
 #title {
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 #snowfall {

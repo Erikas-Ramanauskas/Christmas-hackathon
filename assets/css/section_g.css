@@ -39,7 +39,7 @@
 }
 
 #g-send-container>div {
-    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #FFF, #FFF, #FFF, #d2ac47, #edc967);
     border-radius: 5px;
 }
 
