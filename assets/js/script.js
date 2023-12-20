@@ -71,6 +71,7 @@ function snowflakesInterval() {
 //hourglass
 
 const iconContainer = document.getElementById('iconContainer');
+const hourglassIcon = document.getElementById('showTimer');
 
 // Array containing the hourglass icons from FontAwesome
 const hourglassIcons = ['fas fa-hourglass-start', 'fas fa-hourglass-half', 'fas fa-hourglass-end'];
@@ -87,3 +88,18 @@ function toggleHourglassIcons() {
 }
 
 toggleHourglassIcons();
+
+// Function to handle showing/hiding the timer container
+function handleTimerVisibility() {
+  const homeSection = document.getElementById('home-section');
+  const timerContainer = document.getElementById('iconContainer');
+  const scrollPosition = window.scrollY;
+
+  // Check if the user is on the home section
+  const isOnHomeSection = scrollPosition < homeSection.offsetTop + homeSection.offsetHeight;
+
+  // Show or hide the timer container based on the scroll position
+  timerContainer.style.visibility = isOnHomeSection ? 'visible' : 'hidden';
+}
+
+window.addEventListener('scroll', handleTimerVisibility);
