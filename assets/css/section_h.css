@@ -16,7 +16,7 @@
 .door {
   width: auto;
   height: auto;
-  background-color: var(--main-2);
+  background-color: var(--main-1);
   color: white;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
 
 /* Hover State */
 .door:hover {
-  background-color: var(--main-1);
+  background-color: var(--main-2);
   border: 4px solid #f7ef8a;
   color: #f7ef8a;
   transition: 0.3s;
@@ -45,12 +45,29 @@
 
 /* Active State */
 .door:active {
-  background-color: var(--main-3) !important;
+  background-color: var(--main-1) !important;
   border-color: #d2ac47 !important;
   transition: 0.3s;
 }
 
+/* Color Stay active when clicked */
+.door.clicked {
+  background-color: var(--main-2);
+}
+
+/* Doors Disabled */
+.notYet {
+  background-color: var(--main-1) !important;
+  border: 4px solid #f7ef8a !important;
+  color: #f7ef8a !important;
+}
+
 /* Calendar Model Styling */
+
+.modal-dialog {
+  width: 50vw;
+  max-width: 100%;
+}
 
 .modal-content {
   background-color: var(--main-2);
@@ -179,4 +196,11 @@
   transition: 0.3s;
   background-color: #d2ac47 !important;
   border-color: #c9c5be !important;
+}
+
+@media screen and (max-width: 992px) {
+  .modal-dialog {
+    width: 90vw;
+    max-width: 100%;
+  }
 }
