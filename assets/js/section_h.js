@@ -14,17 +14,38 @@ const hCountryRecipe = document.querySelector('.hCountryRecipe');
 // Calendar Doors
 
 function hCalendarDoors(calendarContent) {
-    for (let i = 1; i <= calendarContent.length; i++) {
+    function handleDoorClick() {
+        const recipeId = this.id.replace('door', '') - 1;
+        displayCalendarContent(calendarContent, recipeId);
+    }
+
+    const today = new Date();
+    // 11 represents December
+    const allOffDecember = new Date(today.getFullYear(), 11 + 1, 0).getDate();
+
+    for (let i = 1; i <= allOffDecember; i++) {
         const door = document.createElement('div');
         door.setAttribute('type', 'button');
         door.setAttribute('class', 'btn btn-primary');
         door.setAttribute('data-bs-toggle', 'modal');
         door.setAttribute('data-bs-target', '#staticBackdrop');
-        door.classList.add('m-1', 'door')
+        door.classList.add('m-1', 'door');
+
+        if (today.getDate() < i || (today.getMonth() !== 11 && today.getFullYear() !== christmasDate.getFullYear())) {
+            door.classList.add('disabled', 'notYet'); // Add 'notYet' class for disabled doors
+            door.addEventListener('click', () => {
+                alert('This door is not yet available. Come back on the respective day!');
+            });
+        } else {
+            door.addEventListener('click', handleDoorClick);
+        }
+
         door.id = `door${i}`;
         door.innerHTML = i;
         hCalendar.appendChild(door);
     }
+
+    addDoorsClickListeners();
     hCellsListeners(calendarContent);
 }
 
