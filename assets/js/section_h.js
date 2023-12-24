@@ -32,9 +32,21 @@ function hCalendarDoors(calendarContent) {
         door.classList.add('m-1', 'door');
 
         if (today.getDate() < i || (today.getMonth() !== 11 && today.getFullYear() !== christmasDate.getFullYear())) {
-            door.classList.add('disabled', 'notYet'); // Add 'notYet' class for disabled doors
+            door.classList.add('notYet'); // Add 'notYet' class for inactive doors
+
+            if (door.classList.contains('notYet')) {
+                door.removeAttribute('data-bs-toggle');
+                door.removeAttribute('data-bs-target');
+            }
+
             door.addEventListener('click', () => {
-                alert('This door is not yet available. Come back on the respective day!');
+                if (door.classList.contains('notYet')) {
+                    // Add shake effect to 'notYet' doors
+                    door.classList.add('shake');
+                    setTimeout(() => {
+                        door.classList.remove('shake');
+                    }, 400);
+                }
             });
         } else {
             door.addEventListener('click', handleDoorClick);
@@ -47,6 +59,20 @@ function hCalendarDoors(calendarContent) {
 
     addDoorsClickListeners();
     hCellsListeners(calendarContent);
+}
+
+function addDoorsClickListeners() {
+    const doorsActive = document.querySelectorAll('.door');
+
+    doorsActive.forEach(door => {
+        door.addEventListener('click', () => {
+            doorsActive.forEach(d => {
+                d.classList.remove('clicked');
+            });
+
+            door.classList.add('clicked');
+        });
+    });
 }
 
 function hCellsListeners(calendarContent) {
